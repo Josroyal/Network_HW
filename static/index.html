@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTEC·NetMap - Faculty Collaboration Network</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- D3.js v7 library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+
+  <!-- Modular Stylesheets -->
+  <link rel="stylesheet" href="static/css/design.css">
+  <link rel="stylesheet" href="static/css/layout.css">
+  <link rel="stylesheet" href="static/css/components.css">
+  <link rel="stylesheet" href="static/css/animations.css">
+</head>
+
+<body>
+  <div class="nm-app">
+
+    <!-- ==========================================
+         1. HEADER
+         ========================================== -->
+    <header class="nm-header">
+      <div class="nm-header-left">
+        <div class="nm-logo">
+          UTEC<span class="nm-logo-dot">·</span>NetMap
+        </div>
+        <span class="nm-logo-sub">Collaboration Explorer</span>
+      </div>
+
+      <div class="nm-header-right">
+        <!-- Search Pill -->
+        <div class="nm-search-container">
+          <span class="nm-search-icon">🔍</span>
+          <input id="nm-search-box" class="nm-search-input" type="text" placeholder="Search faculty member..." autocomplete="off">
+        </div>
+
+        <!-- Metric Stat Counters -->
+        <div class="nm-stats">
+          <div class="nm-stat-card">
+            <span id="nm-stat-nodes" class="nm-stat-val">—</span>
+            <span class="nm-stat-lbl">Faculty</span>
+          </div>
+          <div class="nm-stat-card">
+            <span id="nm-stat-edges" class="nm-stat-val">—</span>
+            <span class="nm-stat-lbl">Collab.</span>
+          </div>
+          <div class="nm-stat-card">
+            <span id="nm-stat-comms" class="nm-stat-val">—</span>
+            <span class="nm-stat-lbl">Communities</span>
+          </div>
+        </div>
+
+        <!-- View toggle buttons in header -->
+        <div class="nm-header-view-tabs">
+          <button id="nm-tab-graph" class="nm-header-tab nm-active" title="Graph View">
+            <span>⬡</span> Graph
+          </button>
+          <button id="nm-tab-analysis" class="nm-header-tab" title="Analysis View">
+            <span>📊</span> Analysis
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==========================================
+         2. MAIN WORKSPACE — FLEX ROW: canvas | analysis panel
+         ========================================== -->
+    <div class="nm-main">
+
+      <!-- ── CANVAS AREA (left, fills remaining space) ── -->
+      <div class="nm-canvas-area" id="nm-canvas-area">
+
+        <!-- FLOATING VIEW MODE TOOLBAR (Centered inside canvas area) -->
+        <nav id="nm-view-modes" class="nm-view-toolbar">
+          <button class="nm-view-btn nm-active" data-mode="default">
+            <span class="nm-view-icon">🌐</span> Default
+          </button>
+          <button class="nm-view-btn" data-mode="degree">
+            <span class="nm-view-icon">🎯</span> Degree
+          </button>
+          <button class="nm-view-btn" data-mode="betweenness">
+            <span class="nm-view-icon">🌉</span> Betweenness
+          </button>
+          <button class="nm-view-btn" data-mode="cluster">
+            <span class="nm-view-icon">🫧</span> Cluster
+          </button>
+          <button class="nm-view-btn" data-mode="community">
+            <span class="nm-view-icon">👥</span> Communities
+          </button>
+          <button class="nm-view-btn" data-mode="semantic">
+            <span class="nm-view-icon">🧠</span> Similarity
+          </button>
+
+          <!-- Vertical divider -->
+          <div class="nm-toolbar-divider"></div>
+
+          <!-- H-Index Flow Toggle -->
+          <button id="nm-toolbar-hindex-order" class="nm-view-btn nm-hindex-btn" title="Toggle H-Index Flow Layout">
+            <span class="nm-view-icon">📶</span> H-Index Flow
+          </button>
+
+          <!-- Edge Toggle button -->
+          <button id="nm-toolbar-edge-toggle" class="nm-view-btn nm-edge-toggle-btn" title="Toggle edge type">
+            <span id="nm-edge-mode-label">⟷ Co-authors</span>
+          </button>
+        </nav>
+
+        <!-- CENTER CANVAS CONTAINER -->
+        <main class="nm-center-canvas">
+
+          <!-- Loading spinner overlay -->
+          <div id="nm-loading-spinner" class="nm-loading-overlay">
+            <div class="nm-spinner"></div>
+            <div class="nm-loading-txt">Resolving collaboration profiles...</div>
+          </div>
+
+          <!-- Floating Zoom Buttons (Bottom Right) -->
+          <div class="nm-zoom-fab">
+            <button id="nm-zoom-in" class="nm-fab-btn" title="Zoom In">＋</button>
+            <button id="nm-zoom-reset" class="nm-fab-btn" title="Reset Zoom">⊙</button>
+            <button id="nm-zoom-out" class="nm-fab-btn" title="Zoom Out">－</button>
+            <button id="nm-layout-reset" class="nm-fab-btn" title="Reset Layout">↺</button>
+          </div>
+
+          <!-- Hover tooltip -->
+          <div id="nm-tooltip"></div>
+
+          <!-- Bottom legend pill — expandable -->
+          <div id="nm-legend">
+            <!-- Populated via Javascript -->
+          </div>
+
+          <!-- SVG D3 Mount Canvas -->
+          <svg id="nm-network-svg">
+            <defs>
+              <marker id="nm-arrow" viewBox="0 0 10 10" refX="15" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="#cbd5e1" />
+              </marker>
+            </defs>
+          </svg>
+        </main>
+
+        <!-- OVERLAY DETAIL DRAWER (floating, inside canvas area) -->
+        <aside id="nm-detail-drawer" class="nm-right-drawer">
+          <div class="nm-drawer-header">
+            <span class="nm-drawer-title">Profile Summary</span>
+            <button id="nm-drawer-close" class="nm-drawer-close">&times;</button>
+          </div>
+
+          <div class="nm-drawer-body">
+            <!-- Placeholder state -->
+            <div id="nm-drawer-placeholder" class="nm-drawer-placeholder">
+              <span class="nm-drawer-placeholder-icon">👤</span>
+              <p>Select any node in the network to inspect detailed faculty indices and connections.</p>
+            </div>
+
+            <!-- Profile metrics details (populated dynamically) -->
+            <div id="nm-drawer-content" class="nm-drawer-content">
+              <div class="nm-detail-avatar-container">
+                <div id="nm-detail-avatar" class="nm-detail-avatar"></div>
+                <h2 id="nm-detail-name" class="nm-detail-name">Faculty Name</h2>
+                <span id="nm-detail-dept" class="nm-detail-dept">Department</span>
+              </div>
+
+              <div class="nm-detail-metrics-grid">
+                <div class="nm-detail-metric-card">
+                  <div id="nm-detail-pubs" class="nm-detail-metric-val">0</div>
+                  <div class="nm-detail-metric-lbl">Pubs</div>
+                </div>
+                <div class="nm-detail-metric-card">
+                  <div id="nm-detail-citations" class="nm-detail-metric-val">0</div>
+                  <div class="nm-detail-metric-lbl">Citations</div>
+                </div>
+                <div class="nm-detail-metric-card">
+                  <div id="nm-detail-hindex" class="nm-detail-metric-val">0</div>
+                  <div class="nm-detail-metric-lbl">h-index</div>
+                </div>
+                <div class="nm-detail-metric-card">
+                  <div id="nm-detail-renacyt" class="nm-detail-metric-val">—</div>
+                  <div class="nm-detail-metric-lbl">Renacyt</div>
+                </div>
+              </div>
+
+              <!-- Node Sizing (moved from left deck) -->
+              <h4 class="nm-detail-section-title">Resize Nodes By</h4>
+              <div id="nm-drawer-sizing-row" class="nm-size-group">
+                <button class="nm-size-chip nm-active" data-size="degree">Connections</button>
+                <button class="nm-size-chip" data-size="hindex">h-index</button>
+                <button class="nm-size-chip" data-size="citations">Citations</button>
+              </div>
+
+              <h4 class="nm-detail-section-title">Biography</h4>
+              <p id="nm-detail-bio" class="nm-detail-bio">No biography available.</p>
+
+              <h4 class="nm-detail-section-title">Research Areas</h4>
+              <div id="nm-detail-areas" class="nm-detail-areas">
+                <!-- Populated via Javascript -->
+              </div>
+
+              <h4 class="nm-detail-section-title">Collaborators</h4>
+              <div id="nm-detail-collaborators" class="nm-detail-list">
+                <!-- Populated via Javascript -->
+              </div>
+
+              <h4 class="nm-detail-section-title">Semantic Neighbors</h4>
+              <div id="nm-detail-semantic-neighbors" class="nm-detail-list">
+                <!-- Populated via Javascript -->
+              </div>
+
+              <h4 class="nm-detail-section-title">Profiles &amp; Contacts</h4>
+              <div id="nm-detail-links" class="nm-detail-links">
+                <!-- Populated via Javascript -->
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div><!-- end .nm-canvas-area -->
+
+      <!-- ── ANALYSIS SIDE PANEL (right, slides in) ── -->
+      <aside id="nm-analysis-panel" class="nm-analysis-panel">
+        <div class="nm-analysis-panel-hdr">
+          <span class="nm-analysis-panel-title">📊 Network Analysis</span>
+          <button id="nm-analysis-panel-close" class="nm-drawer-close">&times;</button>
+        </div>
+
+        <!-- Tab navigation -->
+        <nav id="nm-modal-tabs" class="nm-modal-tabs">
+          <button class="nm-tab-btn nm-active" data-tab="t1">Degree</button>
+          <button class="nm-tab-btn" data-tab="t2">Bridges</button>
+          <button class="nm-tab-btn" data-tab="t3">Depts</button>
+          <button class="nm-tab-btn" data-tab="t4">Areas</button>
+          <button class="nm-tab-btn" data-tab="t5">Predict</button>
+          <button class="nm-tab-btn" data-tab="t6">NLP</button>
+        </nav>
+
+        <!-- Scrollable tab content -->
+        <div id="nm-modal-content" class="nm-modal-body">
+
+          <!-- Tab 1: Degree Centrality -->
+          <section id="nm-tab-panel-t1" class="nm-tab-panel nm-active">
+            <p class="nm-panel-desc">
+              <strong>Degree Centrality</strong> ranks faculty members by their absolute number of co-authorship connections. This identifies the most central hubs inside the UTEC ecosystem.
+            </p>
+            <ul id="nm-rank-degree" class="nm-rank-list">
+              <!-- Populated via Javascript -->
+            </ul>
+          </section>
+
+          <!-- Tab 2: Betweenness -->
+          <section id="nm-tab-panel-t2" class="nm-tab-panel">
+            <p class="nm-panel-desc">
+              <strong>Betweenness Centrality</strong> highlights structural intermediaries. These professors link distinct departments and research clusters, acting as pathways for academic knowledge transfer.
+            </p>
+            <ul id="nm-rank-betweenness" class="nm-rank-list">
+              <!-- Populated via Javascript -->
+            </ul>
+          </section>
+
+          <!-- Tab 3: Depts (Chord Diagram) -->
+          <section id="nm-tab-panel-t3" class="nm-tab-panel">
+            <p class="nm-panel-desc">
+              Cross-department collaboration flow visualized as a <strong>chord diagram</strong>. Hover chords for counts. Click any arc or row to filter the graph.
+            </p>
+            <div id="nm-modal-depts" class="nm-depts-list">
+              <!-- Populated via Javascript (chord + stats) -->
+            </div>
+          </section>
+
+          <!-- Tab 4: Research Areas -->
+          <section id="nm-tab-panel-t4" class="nm-tab-panel">
+            <p class="nm-panel-desc">
+              Top research area keywords generating cross-departmental collaboration, determined by counting shared-keyword co-occurrences.
+            </p>
+            <div id="nm-modal-areas" class="nm-areas-list">
+              <!-- Populated via Javascript -->
+            </div>
+          </section>
+
+          <!-- Tab 5: Predicted Links -->
+          <section id="nm-tab-panel-t5" class="nm-tab-panel">
+            <p class="nm-panel-desc">
+              Predicts emerging connections using the <strong>Adamic-Adar Index</strong> based on shared network neighborhoods between researchers in different departments.
+            </p>
+            <div id="nm-modal-predict" class="nm-predict-list">
+              <!-- Populated via Javascript -->
+            </div>
+          </section>
+
+          <!-- Tab 6: NLP Semantic -->
+          <section id="nm-tab-panel-t6" class="nm-tab-panel">
+            <p class="nm-panel-desc">
+              Discovers cross-departmental researcher pairings with similar academic interests via TF-IDF cosine similarity on research area keywords (scikit-learn).
+            </p>
+            <div id="nm-modal-nlp" class="nm-nlp-list">
+              <!-- Populated via Javascript -->
+            </div>
+          </section>
+
+        </div>
+      </aside><!-- end .nm-analysis-panel -->
+
+    </div><!-- end .nm-main -->
+  </div><!-- end .nm-app -->
+
+  <!-- NetMap JS Modules -->
+  <script src="static/js/config.js"></script>
+  <script src="static/js/state.js"></script>
+  <script src="static/js/graph.js"></script>
+  <script src="static/js/controls.js"></script>
+  <script src="static/js/panels.js"></script>
+  <script src="static/js/events.js"></script>
+  <script src="static/js/boot.js"></script>
+</body>
+</html>

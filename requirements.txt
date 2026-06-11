@@ -1,0 +1,6 @@
+nodriver
+beautifulsoup4
+lxml
+networkx
+scikit-learn
+numpy
