@@ -7,8 +7,8 @@ import random
 import nodriver
 
 # Modular imports
-from crawler.browser_helper import find_chrome_binary, goto_page
-from crawler.parser import (
+from browser_helper import find_chrome_binary, goto_page
+from parser import (
     parse_directory,
     parse_profile,
     parse_collaborators,
