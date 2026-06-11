@@ -1,5 +1,7 @@
 # UTEC·NetMap — Red de Colaboración Científica
 
+![Vista del Visual Tool](img.png)
+
 **UTEC·NetMap** es una plataforma interactiva de análisis de redes y visualización de datos diseñada para explorar, diagnosticar y potenciar la colaboración científica entre los docentes y científicos de la Universidad de Ingeniería y Tecnología (UTEC).
 
 A través de métricas avanzadas de grafos (Network Science) y Procesamiento de Lenguaje Natural (NLP), la herramienta revela la estructura de coautorías de la universidad, detecta comunidades interdisciplinares y predice nuevas oportunidades de sinergia académica.
