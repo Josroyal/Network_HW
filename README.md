@@ -8,6 +8,20 @@ A través de métricas avanzadas de grafos (Network Science) y Procesamiento de 
 
 ---
 
+## Rediseño 2.0 — Para quien nunca vio una red de colaboración
+
+La interfaz fue rediseñada por completo con una identidad **editorial tipo reporte de investigación**: fondo claro, tipografía con jerarquía (Fraunces + Hanken Grotesk), y un **vocabulario de color con significado** (cada color de departamento, cada estilo de línea —coautoría sólida vs. similitud NLP punteada vs. predicción ámbar— y cada anillo naranja de "puente" codifican algo concreto).
+
+Cambios principales:
+
+- **Fuente de datos primaria:** todo el pipeline consume `data/detail_professors_description.json` (perfiles enriquecidos con `education`, `fingerprints`, `internal_orgs`, `external_orgs`, `groups`).
+- **Patrón explicativo único ("What am I seeing?"):** cualquier elemento codificado tiene una "i" que abre el mismo popover, más una leyenda persistente y consciente del modo. Se aprende una vez y funciona igual en el mapa, la ficha del docente y todas las pestañas.
+- **Orientación de primer uso:** una bienvenida ligera + tour opcional de 20 segundos.
+- **Dos superficies:** **Map** (lienzo con 8 lentes: Network, Most-connected, Bridges, By department, Natural groups, Shared interests, Shared alma mater, By impact/h-index) e **Insights** (Leaders, Bridges, Departments/Chord, Bridging topics, Opportunities, Education, Partners, Multi-field, Depth vs breadth).
+- **Insights nuevos:** potencial de colaboración entre grupos, redes por universidad de origen, socios externos compartidos, docentes multi-campo (fingerprints), niveles educativos por departamento y patrón profundidad-vs-amplitud de colaboración.
+
+---
+
 ## Cómo Ejecutar el Proyecto
 
 Sigue estos pasos para instalar las dependencias, procesar la red de datos e iniciar el servidor local:

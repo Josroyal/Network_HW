@@ -1,0 +1,39 @@
+/* ============================================================================
+   NetMap — GRAPH (D3 SVG elements)
+   ========================================================================== */
+
+.link { stroke: var(--link-coauthor); stroke-opacity: 0.5; transition: stroke-opacity var(--fast); }
+.link.cross { stroke-dasharray: none; stroke-opacity: 0.62; }
+.link.nlp { stroke: var(--link-nlp); stroke-dasharray: 4 4; stroke-opacity: 0.6; }
+.link.predicted { stroke: var(--link-predicted); stroke-dasharray: 3 4; stroke-opacity: 0.55; }
+.link.alumni { stroke: var(--link-alumni); stroke-opacity: 0.28; }
+.link.faded { stroke-opacity: 0.06; }
+.link.hi { stroke-opacity: 0.95; }
+
+.node { cursor: pointer; }
+.node .body { stroke-width: 2.5px; transition: stroke var(--fast); }
+.node .ring { fill: none; opacity: 0; }
+.node.bridge .ring {
+  stroke: var(--ring-bridge); stroke-width: 2.5px; opacity: 0.9;
+  stroke-dasharray: 3 3;
+}
+.node.dimmed { opacity: 0.18; }
+.node.selected .body { stroke: var(--accent); stroke-width: 3.5px; }
+.node-init { fill: #fff; font-family: var(--font-body); font-weight: 700; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.node-name {
+  font-family: var(--font-body); font-size: 10px; fill: var(--ink-2);
+  text-anchor: middle; pointer-events: none; opacity: 0; transition: opacity var(--fast);
+  paint-order: stroke; stroke: var(--paper-2); stroke-width: 3px; stroke-linejoin: round;
+}
+.node.labelled .node-name, .node.selected .node-name, .node.bridge .node-name { opacity: 1; }
+
+/* Cluster hulls / bubbles */
+.hull { fill-opacity: 0.07; stroke-opacity: 0.35; stroke-width: 1.5px; }
+.hull-label {
+  font-family: var(--font-display); font-weight: 600; font-size: 13px;
+  fill: var(--ink-2); opacity: 0.6; text-anchor: middle;
+}
+
+/* Grid axis labels for h-index flow */
+.flow-axis { font-family: var(--font-mono); font-size: 10px; fill: var(--ink-3); }
+.flow-band-label { font-family: var(--font-display); font-size: 12px; fill: var(--ink-2); font-weight: 600; }

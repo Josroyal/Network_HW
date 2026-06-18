@@ -4,8 +4,51 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 log = logging.getLogger(__name__)
 
+
+def _build_document(member: dict) -> str:
+    """Build a rich text document from areas, bio, AND structured fingerprints."""
+    text_tokens = []
+
+    # Research areas: repeat each 3x for emphasis
+    for area in (member.get("areas") or []):
+        text_tokens.extend([area] * 3)
+
+    # Structured fingerprints: weight by puntaje and repeat by field
+    for field_group in (member.get("fingerprints_structured") or []):
+        campo = field_group.get("campo", "")
+        for tema in field_group.get("temas", []):
+            nombre = tema.get("nombre", "")
+            try:
+                score = float(tema.get("puntaje", 0))
+            except (ValueError, TypeError):
+                score = 0.0
+            if nombre and score >= 0.3:
+                # Weight: high-score topics repeated more
+                repeats = 3 if score >= 0.8 else (2 if score >= 0.5 else 1)
+                text_tokens.extend([nombre] * repeats)
+                # Also add the field name for field-aware matching
+                if campo:
+                    text_tokens.append(campo)
+
+    # Flat fingerprints fallback (legacy data)
+    if not member.get("fingerprints_structured"):
+        for topic, score in (member.get("fingerprints") or {}).items():
+            if score >= 0.3:
+                repeats = 3 if score >= 0.8 else (2 if score >= 0.5 else 1)
+                text_tokens.extend([topic] * repeats)
+
+    # Bio text
+    bio = member.get("bio")
+    if bio and len(bio) > 30:
+        text_tokens.append(bio)
+
+    return " ".join(text_tokens).strip()
+
+
 def compute_nlp_similarity(faculty_list: list[dict]) -> tuple[dict[str, list[dict]], list[dict], dict[str, str]]:
-    """Computes cosine similarity between faculty text documents using TF-IDF."""
+    """Computes cosine similarity between faculty text documents using TF-IDF.
+    Now uses structured fingerprints (campo + temas with puntaje) for richer vectorization.
+    """
     semantic_neighbors_map = {member["id"]: [] for member in faculty_list}
     global_semantic_edges = []
     documents_map = {}
@@ -13,25 +56,12 @@ def compute_nlp_similarity(faculty_list: list[dict]) -> tuple[dict[str, list[dic
     if not faculty_list:
         return semantic_neighbors_map, global_semantic_edges, documents_map
 
-    # 1. Build text documents
+    # 1. Build text documents using enriched data
     for member in faculty_list:
-        areas = member.get("areas") or []
-        bio = member.get("bio")
-
-        if not areas and bio is None:
-            documents_map[member["id"]] = ""
-            log.warning("Empty NLP document for %s (no areas, no bio)", member["name"])
-        else:
-            text_tokens = []
-            # Research areas: repeat each area term 3 times
-            for area in areas:
-                text_tokens.extend([area] * 3)
-
-            # Bio text: append bio if not None and length > 30
-            if bio is not None and len(bio) > 30:
-                text_tokens.append(bio)
-
-            documents_map[member["id"]] = " ".join(text_tokens).strip()
+        doc = _build_document(member)
+        documents_map[member["id"]] = doc
+        if not doc:
+            log.warning("Empty NLP document for %s (no areas, no fingerprints, no bio)", member["name"])
 
     # 2. Fit TF-IDF Vectorizer
     doc_ids = [member["id"] for member in faculty_list]
@@ -42,7 +72,7 @@ def compute_nlp_similarity(faculty_list: list[dict]) -> tuple[dict[str, list[dic
         return semantic_neighbors_map, global_semantic_edges, documents_map
 
     try:
-        vectorizer = TfidfVectorizer(max_features=300, ngram_range=(1, 2))
+        vectorizer = TfidfVectorizer(max_features=500, ngram_range=(1, 2))
         tfidf_matrix = vectorizer.fit_transform(doc_texts)
         similarity_matrix = cosine_similarity(tfidf_matrix)
     except Exception as tfidf_error:
@@ -96,6 +126,7 @@ def compute_nlp_similarity(faculty_list: list[dict]) -> tuple[dict[str, list[dic
 
     return semantic_neighbors_map, global_semantic_edges, documents_map
 
+
 def label_communities_with_tfidf(
     communities: list[frozenset],
     faculty_list: list[dict],
@@ -131,7 +162,7 @@ def label_communities_with_tfidf(
                     if top_terms:
                         community_label = " · ".join(top_terms)
             except Exception as mini_tfidf_error:
-                log.warning("Mini-TF-IDF for community %d failed: %s. Falling back to default label.", index, mini_tfidf_error)
+                log.warning("Mini-TF-IDF for community %d failed: %s. Falling back.", index, mini_tfidf_error)
 
         community_records.append({
             "index": index,
@@ -140,3 +171,40 @@ def label_communities_with_tfidf(
         })
 
     return community_records
+
+
+def compute_fingerprint_field_overlap(faculty_list: list[dict]) -> list[dict]:
+    """Identifies professors whose fingerprints span multiple academic fields.
+    Returns list of {"id": str, "name": str, "dept_code": str, "fields": [str], "field_count": int, "top_topics_per_field": {field: [topic]}}.
+    """
+    results = []
+
+    for m in faculty_list:
+        structured = m.get("fingerprints_structured", [])
+        if not structured or len(structured) < 2:
+            continue
+
+        fields = []
+        top_topics = {}
+        for field_group in structured:
+            campo = field_group.get("campo", "")
+            temas = field_group.get("temas", [])
+            if campo and temas:
+                fields.append(campo)
+                # Top 3 topics by score in this field
+                sorted_temas = sorted(temas, key=lambda t: -float(t.get("puntaje", 0)))
+                top_topics[campo] = [t["nombre"] for t in sorted_temas[:3]]
+
+        if len(fields) >= 2:
+            results.append({
+                "id": m["id"],
+                "name": m["name"],
+                "dept_code": m["dept_code"],
+                "fields": fields,
+                "field_count": len(fields),
+                "top_topics_per_field": top_topics,
+            })
+
+    results.sort(key=lambda x: -x["field_count"])
+    log.info("Fingerprint field overlap: %d multi-field researchers found", len(results))
+    return results

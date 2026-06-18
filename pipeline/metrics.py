@@ -10,11 +10,17 @@ from pipeline.graph_analysis import (
     construct_collaboration_network,
     compute_centralities,
     detect_communities_modularity,
-    predict_cross_dept_links
+    predict_cross_dept_links,
+    compute_education_network,
+    compute_external_org_overlap,
+    compute_cross_group_opportunities,
+    compute_education_levels,
+    compute_collaboration_shape,
 )
 from pipeline.nlp_analysis import (
     compute_nlp_similarity,
-    label_communities_with_tfidf
+    label_communities_with_tfidf,
+    compute_fingerprint_field_overlap,
 )
 
 # Configure logging
@@ -23,17 +29,17 @@ log = logging.getLogger(__name__)
 
 
 class NetworkBuilder:
-    """Orchestrates network construction, NLP similarity calculations, centrality analysis, and community discovery."""
+    """Orchestrates network construction, NLP similarity, centrality analysis, community discovery, and new analytics."""
 
     def __init__(self, raw_path: str = None, graph_path: str = None):
-        self.raw_path = raw_path or os.path.join("data", "faculty_raw.json")
+        self.raw_path = raw_path or os.path.join("data", "detail_professors_description.json")
         self.graph_path = graph_path or os.path.join("data", "graph.json")
 
     def run(self) -> dict:
-        """Orchestrates the entire metrics and community modeling pipeline."""
+        """Orchestrates the entire metrics and network visualizer pipeline."""
         log.info("Starting Metrics and Network visualizer pipeline...")
 
-        # 1. Load and normalize raw faculty records
+        # 1. Load and normalize faculty records from enriched JSON
         faculty_list = load_faculty_data(self.raw_path)
         log.info("Successfully loaded %d faculty entries.", len(faculty_list))
 
@@ -53,7 +59,7 @@ class NetworkBuilder:
         predicted_links = predict_cross_dept_links(network, faculty_list)
         log.info("Link prediction complete: %d potential links found.", len(predicted_links))
 
-        # 6. Apply NLP vectorization and similarities
+        # 6. Apply NLP vectorization and similarities (now with structured fingerprints)
         semantic_neighbors_map, semantic_edges, documents_map = compute_nlp_similarity(faculty_list)
         log.info("NLP similarity computed: %d global semantic edges.", len(semantic_edges))
 
@@ -61,7 +67,32 @@ class NetworkBuilder:
         communities_structure = label_communities_with_tfidf(communities, faculty_list, documents_map)
         log.info("Community labeling completed.")
 
-        # 8. Consolidate and write unified dashboard JSON payload
+        # 8. NEW: Education network (alma mater connections)
+        education_network = compute_education_network(faculty_list)
+        log.info("Education network: %d university groups, %d edges.",
+                 len(education_network["university_stats"]), len(education_network["edges"]))
+
+        # 9. NEW: External organization overlap
+        external_org_stats = compute_external_org_overlap(faculty_list)
+        log.info("External org overlap: %d shared organizations.", len(external_org_stats))
+
+        # 10. NEW: Fingerprint field overlap (multi-disciplinary researchers)
+        fingerprint_fields = compute_fingerprint_field_overlap(faculty_list)
+        log.info("Fingerprint field overlap: %d multi-field researchers.", len(fingerprint_fields))
+
+        # 11. NEW: Cross-group collaboration opportunities
+        cross_group_opportunities = compute_cross_group_opportunities(network, faculty_list)
+        log.info("Cross-group opportunities: %d pairs.", len(cross_group_opportunities))
+
+        # 12. NEW: Education level distribution
+        education_levels = compute_education_levels(faculty_list)
+        log.info("Education levels analyzed for %d departments.", len(education_levels["by_department"]))
+
+        # 13. NEW: Collaboration shape (depth vs breadth)
+        collaboration_shape = compute_collaboration_shape(faculty_list)
+        log.info("Collaboration shape computed for %d professors.", len(collaboration_shape))
+
+        # 14. Consolidate and write unified dashboard JSON payload
         graph_data = self.assemble_graph_data(
             faculty_list=faculty_list,
             network=network,
@@ -71,7 +102,13 @@ class NetworkBuilder:
             predicted_links=predicted_links,
             semantic_neighbors_map=semantic_neighbors_map,
             semantic_edges=semantic_edges,
-            communities_structure=communities_structure
+            communities_structure=communities_structure,
+            education_network=education_network,
+            external_org_stats=external_org_stats,
+            fingerprint_fields=fingerprint_fields,
+            cross_group_opportunities=cross_group_opportunities,
+            education_levels=education_levels,
+            collaboration_shape=collaboration_shape,
         )
 
         output_dir = os.path.dirname(self.graph_path)
@@ -94,9 +131,15 @@ class NetworkBuilder:
         predicted_links: list[dict],
         semantic_neighbors_map: dict[str, list[dict]],
         semantic_edges: list[dict],
-        communities_structure: list[dict]
+        communities_structure: list[dict],
+        education_network: dict,
+        external_org_stats: list[dict],
+        fingerprint_fields: list[dict],
+        cross_group_opportunities: list[dict],
+        education_levels: dict,
+        collaboration_shape: list[dict],
     ) -> dict:
-        """Assembles all calculated parameters and outputs into the final standardized JSON structure."""
+        """Assembles all calculated parameters into the final standardized JSON structure."""
         nodes_output = []
         for member in faculty_list:
             node_id = member["id"]
@@ -108,8 +151,12 @@ class NetworkBuilder:
             else:
                 weighted_degree_val = 0
 
-            nodes_output.append({
-                **{k: v for k, v in member.items() if not k.startswith("_")},
+            # Build node output — include new fields for frontend
+            node_data = {
+                k: v for k, v in member.items()
+                if not k.startswith("_") and k not in ("fingerprints", "collaborator_details")
+            }
+            node_data.update({
                 "degree": degree_val,
                 "weighted_degree": weighted_degree_val,
                 "degree_centrality": round(centrality_metrics["degree_centrality"].get(node_id, 0.0), 4),
@@ -118,8 +165,10 @@ class NetworkBuilder:
                 "pagerank": round(centrality_metrics["pagerank"].get(node_id, 0.0), 5),
                 "eigenvector_centrality": round(centrality_metrics["eigenvector_centrality"].get(node_id, 0.0), 4),
                 "community": community_mapping.get(node_id, 0),
-                "semantic_neighbors": semantic_neighbors_map.get(node_id, [])
+                "semantic_neighbors": semantic_neighbors_map.get(node_id, []),
+                "collaborator_details": member.get("collaborator_details", []),
             })
+            nodes_output.append(node_data)
 
         edges_output = []
         faculty_map = {member["id"]: member for member in faculty_list}
@@ -140,7 +189,11 @@ class NetworkBuilder:
             "num_nodes": len(nodes_output),
             "num_edges": len(edges_output),
             "num_semantic_edges": len(semantic_edges),
-            "num_communities": len(communities_structure)
+            "num_communities": len(communities_structure),
+            "num_education_edges": len(education_network.get("edges", [])),
+            "num_external_orgs": len(external_org_stats),
+            "num_multi_field_researchers": len(fingerprint_fields),
+            "num_cross_group_opportunities": len(cross_group_opportunities),
         }
 
         graph_data = {
@@ -149,6 +202,12 @@ class NetworkBuilder:
             "semantic_edges": semantic_edges,
             "predicted_links": predicted_links,
             "communities": communities_structure,
+            "education_network": education_network,
+            "external_org_stats": external_org_stats,
+            "fingerprint_fields": fingerprint_fields,
+            "cross_group_opportunities": cross_group_opportunities,
+            "education_levels": education_levels,
+            "collaboration_shape": collaboration_shape,
             "summary": summary_info
         }
 
@@ -157,7 +216,7 @@ class NetworkBuilder:
 
 def main():
     parser = argparse.ArgumentParser(description="Faculty network visualizer preprocessing pipeline")
-    parser.add_argument("--raw", type=str, default=os.path.join("data", "faculty_raw.json"))
+    parser.add_argument("--raw", type=str, default=os.path.join("data", "detail_professors_description.json"))
     parser.add_argument("--graph", type=str, default=os.path.join("data", "graph.json"))
     args = parser.parse_args()
 
@@ -165,13 +224,17 @@ def main():
     graph_data = builder.run()
 
     # Printed summary
-    print("\n" + "=" * 50)
+    print("\n" + "=" * 60)
     print("METRICS PIPELINE PROCESS COMPLETE SUMMARY")
-    print("=" * 50)
-    print(f"Total Nodes Processed:      {graph_data['summary']['num_nodes']}")
-    print(f"Total Collaboration Edges:  {graph_data['summary']['num_edges']}")
-    print(f"Total NLP Semantic Edges:   {graph_data['summary']['num_semantic_edges']}")
-    print(f"Total Communities:          {graph_data['summary']['num_communities']}")
+    print("=" * 60)
+    print(f"Total Nodes Processed:          {graph_data['summary']['num_nodes']}")
+    print(f"Total Collaboration Edges:      {graph_data['summary']['num_edges']}")
+    print(f"Total NLP Semantic Edges:       {graph_data['summary']['num_semantic_edges']}")
+    print(f"Total Communities:              {graph_data['summary']['num_communities']}")
+    print(f"Education Network Edges:        {graph_data['summary']['num_education_edges']}")
+    print(f"External Orgs (shared):         {graph_data['summary']['num_external_orgs']}")
+    print(f"Multi-Field Researchers:        {graph_data['summary']['num_multi_field_researchers']}")
+    print(f"Cross-Group Opportunities:      {graph_data['summary']['num_cross_group_opportunities']}")
 
     print("\nCommunities:")
     for comm in graph_data["communities"]:
@@ -186,7 +249,18 @@ def main():
         print("\nTop 3 Predicted Links:")
         for link in graph_data["predicted_links"][:3]:
             print(f"  - {link['source']} <--> {link['target']} (Score: {link['score']}, Shared neighbors: {link['common_neighbors']})")
-    print("=" * 50)
+
+    if graph_data["education_network"]["university_stats"]:
+        print("\nTop 5 Alma Mater Universities:")
+        for uni in graph_data["education_network"]["university_stats"][:5]:
+            print(f"  - {uni['university']}: {uni['count']} faculty")
+
+    if graph_data["cross_group_opportunities"]:
+        print("\nTop 3 Cross-Group Opportunities:")
+        for opp in graph_data["cross_group_opportunities"][:3]:
+            print(f"  - {opp['source']} <--> {opp['target']} ({opp['overlap_count']} shared topics)")
+
+    print("=" * 60)
 
 
 if __name__ == "__main__":

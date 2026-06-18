@@ -1,0 +1,84 @@
+/* ============================================================================
+   NetMap Design System — TOKENS
+   One source of truth for color, type, spacing, elevation and motion.
+   Visual direction: a light, editorial "research report" identity — warm paper,
+   generous whitespace, a scholarly serif for display, and a small color
+   vocabulary where every hue MEANS something.
+   ========================================================================== */
+
+:root {
+  /* ---- Surfaces & ink (the quiet base) ---- */
+  --paper:        #FAF8F3;   /* app background — warm paper */
+  --paper-2:      #F2EEE6;   /* recessed areas, canvas wash */
+  --surface:      #FFFFFF;   /* cards, panels, drawers */
+  --surface-2:    #FBFAF7;   /* subtle striping inside cards */
+  --line:         #E7E2D8;   /* hairline borders */
+  --line-strong:  #D6CFC1;
+
+  --ink:          #1B1B26;   /* primary text */
+  --ink-2:        #565064;   /* secondary text */
+  --ink-3:        #8A8395;   /* captions, hints */
+
+  /* ---- Brand accent — used ONLY for UI chrome (active state, focus,
+          primary action). Deliberately distinct from every data color so it
+          never competes with an encoding. A scholarly petrol green. ---- */
+  --accent:       #0E7C6B;
+  --accent-ink:   #0A5A4E;
+  --accent-soft:  #E2F1ED;
+  --accent-ring:  rgba(14,124,107,0.28);
+
+  /* ---- Encoding colors (these carry MEANING, never decoration) ---- */
+  /* Link semantics */
+  --link-coauthor:   #6B7280;  /* solid grey — confirmed co-authorship */
+  --link-nlp:        #7C3AED;  /* dashed violet — NLP topic similarity */
+  --link-predicted:  #C77D0A;  /* dashed amber — predicted / opportunity */
+  --link-alumni:     #2563EB;  /* thin blue — shared alma mater */
+  /* Node status */
+  --ring-bridge:     #EA580C;  /* orange halo — high betweenness (a bridge) */
+  --confirmed:       #0E7C6B;  /* confirmed collaboration */
+  --predicted:       #C77D0A;  /* predicted opportunity */
+
+  /* ---- Department palette (categorical, harmonised, max contrast) ---- */
+  --dept-CS:  #3B4CCA;  --dept-EE:  #C77D0A;  --dept-ME:  #0E8C7F;
+  --dept-CE:  #B0413E;  --dept-IE:  #7A3FBF;  --dept-BIO: #1E7FC2;
+  --dept-HUM: #C44D24;  --dept-SCI: #2E8B40;  --dept-DS:  #0E7490;
+  --dept-AI:  #6D28D9;  --dept-BUS: #9A6B12;  --dept-SYS: #BE2A52;
+  --dept-UNK: #8A8395;
+
+  /* ---- Type scale ---- */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body:    "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --t-hero:   clamp(1.7rem, 2.4vw, 2.3rem);
+  --t-h1:     1.45rem;
+  --t-h2:     1.12rem;
+  --t-h3:     0.98rem;
+  --t-body:   0.92rem;
+  --t-sm:     0.82rem;
+  --t-xs:     0.72rem;
+  --t-mono:   0.8rem;
+
+  /* ---- Spacing (8pt-ish, generous) ---- */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px;
+  --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+
+  /* ---- Radius / elevation / motion ---- */
+  --r-sm: 8px; --r-md: 12px; --r-lg: 18px; --r-pill: 999px;
+
+  --shadow-1: 0 1px 2px rgba(27,27,38,0.04), 0 1px 3px rgba(27,27,38,0.06);
+  --shadow-2: 0 4px 14px rgba(27,27,38,0.07), 0 1px 4px rgba(27,27,38,0.05);
+  --shadow-3: 0 18px 48px rgba(27,27,38,0.16), 0 6px 16px rgba(27,27,38,0.08);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --fast: 140ms; --med: 260ms; --slow: 460ms;
+}
+
+/* Department color helper map exposed as utility classes for chips */
+.dot-CS{background:var(--dept-CS)} .dot-EE{background:var(--dept-EE)}
+.dot-ME{background:var(--dept-ME)} .dot-CE{background:var(--dept-CE)}
+.dot-IE{background:var(--dept-IE)} .dot-BIO{background:var(--dept-BIO)}
+.dot-HUM{background:var(--dept-HUM)} .dot-SCI{background:var(--dept-SCI)}
+.dot-DS{background:var(--dept-DS)} .dot-AI{background:var(--dept-AI)}
+.dot-BUS{background:var(--dept-BUS)} .dot-SYS{background:var(--dept-SYS)}
+.dot-UNK{background:var(--dept-UNK)}
