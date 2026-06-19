@@ -34,18 +34,32 @@
     return valid.length ? valid : ["None"];
   };
 
-  NM._groupColorCache = {};
+  NM.initGroupColors = function () {
+    const groups = new Set();
+    NM.state.graph.nodes.forEach(n => {
+      NM.getResearchGroups(n).forEach(g => {
+        if (g !== "None") groups.add(g);
+      });
+    });
+    const sortedGroups = Array.from(groups).sort();
+    
+    // 24 distinct, high-contrast colors
+    const colors = [
+      "#3B4CCA", "#0E8C7F", "#C77D0A", "#B0413E", "#6D28D9", "#2E8B40",
+      "#1E7FC2", "#C44D24", "#BE2A52", "#0E7490", "#9A6B12", "#7A3FBF",
+      "#10B981", "#F59E0B", "#EC4899", "#3B82F6", "#8B5CF6", "#EF4444",
+      "#14B8A6", "#6366F1", "#A855F7", "#06B6D4", "#84CC16", "#F43F5E"
+    ];
+    
+    NM._groupColorMap = {};
+    sortedGroups.forEach((g, i) => {
+      NM._groupColorMap[g] = colors[i % colors.length];
+    });
+  };
+
   NM.groupColor = function (g) {
     if (g === "None") return "#a0a0a0";
-    if (!(g in NM._groupColorCache)) {
-      let hash = 0;
-      for (let i = 0; i < g.length; i++) {
-        hash = g.charCodeAt(i) + ((hash << 5) - hash);
-      }
-      const hue = (Math.abs(hash) % 24) * 15;
-      NM._groupColorCache[g] = `hsl(${hue}, 75%, 48%)`;
-    }
-    return NM._groupColorCache[g];
+    return NM._groupColorMap ? (NM._groupColorMap[g] || "#a0a0a0") : "#a0a0a0";
   };
 
   NM.buildRail = function () {
@@ -93,6 +107,8 @@
 
     const nodes = NM.state.graph.nodes;
     nodes.forEach((n) => { NM.state.nodeById[n.id] = n; });
+
+    NM.initGroupColors();
 
     const maxDeg = d3.max(nodes, (n) => n.degree || 0) || 1;
     rScale = d3.scaleSqrt().domain([0, maxDeg]).range([9, 30]);
