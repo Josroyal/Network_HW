@@ -43,7 +43,7 @@
           "university": "Università di Bologna",
           "university_canonical": "Università di Bologna",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ciencias Ingeniería Electrónica,  →",
@@ -1006,7 +1006,7 @@
           "university": "Universidad Simón Bolivar",
           "university_canonical": "Universidad Simón Bolívar",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, TITULO MATEMÁTICAS PURAS,",
@@ -1014,7 +1014,7 @@
           "university": "Universidad Simón Bolivar",
           "university_canonical": "Universidad Simón Bolívar",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -1302,7 +1302,7 @@
           "university": "UNIVERSITAT POLITÉCNICA DE CATALUNYA",
           "university_canonical": "UNIVERSITAT POLITÉCNICA DE CATALUNYA",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, INGENIERO ELECTRONICO,",
@@ -1310,7 +1310,7 @@
           "university": "Universidad Privada Antenor Orrego",
           "university_canonical": "Universidad Privada Antenor Orrego",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "BACHILLER EN INGENIERÍA ELECTRÓNICA,",
@@ -1318,7 +1318,7 @@
           "university": "Universidad Privada Antenor Orrego",
           "university_canonical": "Universidad Privada Antenor Orrego",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -1688,7 +1688,7 @@
           "university": "Instituto de Química de la Universidad de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Bachiller en Ciencias con mención en Ingeniería Química,",
@@ -1712,7 +1712,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -2159,7 +2159,7 @@
           "university": "Eindhoven University of Technology",
           "university_canonical": "Eindhoven University of Technology",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Especialista en Bioingeniería,",
@@ -2167,7 +2167,7 @@
           "university": "Universidad Francisco José de Caldas, Bogotá",
           "university_canonical": "Universidad Francisco José de Caldas, Bogotá",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ingeniería Biomédica,",
@@ -2175,7 +2175,7 @@
           "university": "Universidad Nacional de Colombia Bogotá",
           "university_canonical": "Universidad Nacional de Colombia Bogotá",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ingeniero Mecánico,",
@@ -2183,7 +2183,7 @@
           "university": "Universidad Nacional de Colombia, Bogotá",
           "university_canonical": "Universidad Nacional de Colombia",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -2450,7 +2450,7 @@
           "university": "University of Florida",
           "university_canonical": "University of Florida",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -2612,7 +2612,7 @@
           "university": "Kyoto University",
           "university_canonical": "Kyoto University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Política de Prevención de Desastres,",
@@ -3228,7 +3228,7 @@
           "university": "Pontificia Universidad Catolica de Chile",
           "university_canonical": "Pontificia Universidad Catolica de Chile",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ciencias de la Computación,",
@@ -3236,7 +3236,7 @@
           "university": "Pontificia Universidad Catolica de Chile",
           "university_canonical": "Pontificia Universidad Catolica de Chile",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ingeniería de Sistemas,",
@@ -3244,7 +3244,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería de Sistemas,",
@@ -3252,7 +3252,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -3438,7 +3438,7 @@
           "university": "Universidad del Magdalena",
           "university_canonical": "Universidad del Magdalena",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctor en Ingeniería Civil, Área de estructuras y Geotecnia,",
@@ -3446,7 +3446,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Maestro en Ingeniería Civil,",
@@ -3454,7 +3454,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -4055,7 +4055,7 @@
           "university": "Université Paris Saclay",
           "university_canonical": "Université Paris Saclay",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Maestría en RAM (ROBÓTICA, ASSISTENCIA Y MOVILIDAD) → Fecha de beca:",
@@ -4354,7 +4354,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ingeniería Mecánica en el área de mecánica de sólidos y proyecto mecánico,",
@@ -4362,7 +4362,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -4929,7 +4929,7 @@
           "university": "National Tsing Hua University",
           "university_canonical": "National Tsing Hua University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ciencias con mención en Ingeniería Mecatrónica,",
@@ -5461,7 +5461,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Especialización MBA en Ciencia de Datos y Analítica (Título de Segunda Especialidad Profesional),  →",
@@ -5469,7 +5469,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ciencias en el Programa: Sistemas de Información, área de Especialización: Metodología y Técnicas de Computación,  →",
@@ -5477,7 +5477,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ingeniero Informático y de Sistemas,",
@@ -5485,7 +5485,7 @@
           "university": "Universidad Nacional De San Antonio Abad Del Cusco",
           "university_canonical": "Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería de Informática y de Sistemas,  →",
@@ -5493,7 +5493,7 @@
           "university": "Universidad Nacional De San Antonio Abad Del Cusco",
           "university_canonical": "Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -6353,7 +6353,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -6958,7 +6958,7 @@
           "university": "Universidad Nacional De San Antonio Abad Del Cusco",
           "university_canonical": "Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Mecánica,",
@@ -6966,7 +6966,7 @@
           "university": "Universidad Nacional De San Antonio Abad Del Cusco",
           "university_canonical": "Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado, Ingeniería Civil,",
@@ -6974,7 +6974,7 @@
           "university": "University of Puerto Rico",
           "university_canonical": "University of Puerto Rico",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ingeniería Mecánica,",
@@ -6982,7 +6982,7 @@
           "university": "University of Puerto Rico",
           "university_canonical": "University of Puerto Rico",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ingeniería Civil,",
@@ -6990,7 +6990,7 @@
           "university": "University of Puerto Rico",
           "university_canonical": "University of Puerto Rico",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -7840,7 +7840,7 @@
           "university": "University of South Florida, Tampa",
           "university_canonical": "University of South Florida, Tampa",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ingeniería Ambiental,  →",
@@ -7848,7 +7848,7 @@
           "university": "University of South Florida, Tampa",
           "university_canonical": "University of South Florida, Tampa",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería Química,  →",
@@ -8066,7 +8066,7 @@
           "university": "Universidad De Picardie Saint-Quentin",
           "university_canonical": "Universidad De Picardie Saint-Quentin",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Matemáticas y Física,",
@@ -8074,7 +8074,7 @@
           "university": "Universidad De Picardie Saint-Quentin",
           "university_canonical": "Universidad De Picardie Saint-Quentin",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado,  Management Science,",
@@ -8082,7 +8082,7 @@
           "university": "Université Laval",
           "university_canonical": "Université Laval",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, MBA Finanzas,",
@@ -8090,7 +8090,7 @@
           "university": "Université Laval",
           "university_canonical": "Université Laval",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -8607,7 +8607,7 @@
           "university": "Universidad Autónoma Benito Juárez de Oaxaca, Mexico",
           "university_canonical": "Universidad Autónoma Benito Juárez de Oaxaca, Mexico",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctor en Historia del Arte,",
@@ -8615,7 +8615,7 @@
           "university": "Universidad Nacional Autónoma de México",
           "university_canonical": "Universidad Nacional Autónoma de México (UNAM)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en Historia del Arte,",
@@ -8623,7 +8623,7 @@
           "university": "Universidad Nacional Autónoma de México",
           "university_canonical": "Universidad Nacional Autónoma de México (UNAM)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -10225,7 +10225,7 @@
           "university": "Universidad de Heidelberg, Alemania",
           "university_canonical": "Universidad de Heidelberg, Alemania",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Master in Variation Forbidden Highionized Lines in Ark 564,",
@@ -10233,7 +10233,7 @@
           "university": "Universidad de Heidelberg, Alemania",
           "university_canonical": "Universidad de Heidelberg, Alemania",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Licenciado en Estudio de Tiempos de Producción en la Industria Textil,",
@@ -11468,7 +11468,7 @@
           "university": "Universidad Ricardo Palma",
           "university_canonical": "Universidad Ricardo Palma",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "BACHILLER EN INGENIERÍA ELECTRÓNICA,",
@@ -11476,7 +11476,7 @@
           "university": "Universidad Ricardo Palma",
           "university_canonical": "Universidad Ricardo Palma",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, EN CIENCIAS y PROGRAMA : INGENIERÍA ELÉCTRICA, ÁREA DE CONCENTRACIÓN: SISTEMAS ELECTRÓNICOS,",
@@ -11484,7 +11484,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -12089,7 +12089,7 @@
           "university": "Simon Fraser University",
           "university_canonical": "Simon Fraser University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ciencias con mención en Física,",
@@ -13015,7 +13015,7 @@
           "university": "Universidad Católica San Pablo",
           "university_canonical": "Universidad Católica San Pablo (UCSP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ingeniero informático y de sistemas,",
@@ -13023,7 +13023,7 @@
           "university": "Universidad Nacional De San Antonio Abad Del Cusco",
           "university_canonical": "Universidad Nacional de San Antonio Abad del Cusco (UNSAAC)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado, Ciencia de la Computación y Matemática Computacional,",
@@ -13031,7 +13031,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -13707,7 +13707,7 @@
           "university": "Universidad Privada Antenor Orrego",
           "university_canonical": "Universidad Privada Antenor Orrego",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Electrónica,",
@@ -13715,7 +13715,7 @@
           "university": "Universidad Privada Antenor Orrego",
           "university_canonical": "Universidad Privada Antenor Orrego",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctor en Ciencias de la Computación,",
@@ -13723,7 +13723,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en el área de Microelectrónica,",
@@ -13731,7 +13731,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -14297,7 +14297,7 @@
           "university": "Tohoku University",
           "university_canonical": "Tohoku University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Médico Cirujano,",
@@ -15770,7 +15770,7 @@
           "university": "University of Pittsburgh",
           "university_canonical": "University of Pittsburgh",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ingeniería Civil,  →",
@@ -15778,7 +15778,7 @@
           "university": "University of Pittsburgh",
           "university_canonical": "University of Pittsburgh",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería Civil,  →",
@@ -16971,7 +16971,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Magister en Ciencias de la Computación,",
@@ -16979,7 +16979,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -17250,7 +17250,7 @@
           "university": "Leland Stanford Junior University",
           "university_canonical": "Stanford University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, LICENCIADO EN MATEMÁTICA,",
@@ -17616,7 +17616,7 @@
           "university": "Leland Stanford Junior University",
           "university_canonical": "Stanford University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Licenciatura en Ciencias en Ingeniería Civil,",
@@ -17624,7 +17624,7 @@
           "university": "University Of Kansas",
           "university_canonical": "University Of Kansas",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctor en Ingeniería Civil y Ambiental ,",
@@ -17632,7 +17632,7 @@
           "university": "University of Iowa",
           "university_canonical": "University of Iowa",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -18647,7 +18647,7 @@
           "university": "Universidad De San Martin De Porres",
           "university_canonical": "Universidad de San Martín de Porres (USMP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -18740,7 +18740,7 @@
           "university": "Universidad Ceu San Pablo",
           "university_canonical": "Universidad Ceu San Pablo",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Electrónica,",
@@ -18748,7 +18748,7 @@
           "university": "Universidad De San Martin De Porres",
           "university_canonical": "Universidad de San Martín de Porres (USMP)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -19372,7 +19372,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en Ingeniería Eléctrica,",
@@ -19380,7 +19380,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -19809,7 +19809,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en Ingeniería Eléctrica,",
@@ -19817,7 +19817,7 @@
           "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
           "university_canonical": "Universidade Estadual de Campinas (UNICAMP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -20357,7 +20357,7 @@
           "university": "Lehigh University",
           "university_canonical": "Lehigh University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en Ingeniería Mecánica,",
@@ -20365,7 +20365,7 @@
           "university": "Lehigh University",
           "university_canonical": "Lehigh University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Ingeniero Mecánico,",
@@ -20373,7 +20373,7 @@
           "university": "Seoul National University",
           "university_canonical": "Seoul National University",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -21098,7 +21098,7 @@
           "university": "Rotterdam School of Management, Erasmus University",
           "university_canonical": "Rotterdam School of Management, Erasmus University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en Investigación de Negocios,",
@@ -21106,7 +21106,7 @@
           "university": "Rotterdam School of Management, Erasmus University",
           "university_canonical": "Rotterdam School of Management, Erasmus University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Ingeniero Industrial,",
@@ -21390,7 +21390,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Ingeniero de Sistemas,",
@@ -21398,7 +21398,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniero de Sistemas,",
@@ -21406,7 +21406,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Magíster en Ingeniería de Software,",
@@ -21414,7 +21414,7 @@
           "university": "Universidad de Tarapacá",
           "university_canonical": "Universidad de Tarapacá",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -21973,7 +21973,7 @@
           "university": "Technical University of Lisbon",
           "university_canonical": "Technical University of Lisbon",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctor en Ingeniería Naval,",
@@ -21981,7 +21981,7 @@
           "university": "Technical University of Lisbon",
           "university_canonical": "Technical University of Lisbon",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Naval,",
@@ -23312,7 +23312,7 @@
           "university": "UNIVERSITAT DE VALÈNCIA",
           "university_canonical": "UNIVERSITAT DE VALÈNCIA",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster,  Magister en Ciencias en Físicas,  → Fecha de beca:",
@@ -23320,7 +23320,7 @@
           "university": "Universidad Nacional de Colombia, Bogotá",
           "university_canonical": "Universidad Nacional de Colombia",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Físico,  → Fecha de beca:",
@@ -23328,7 +23328,7 @@
           "university": "Universidad Nacional de Colombia, Bogotá",
           "university_canonical": "Universidad Nacional de Colombia",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -25717,7 +25717,7 @@
           "university": "Universidad Católica San Pablo",
           "university_canonical": "Universidad Católica San Pablo (UCSP)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería Informática,",
@@ -25725,7 +25725,7 @@
           "university": "Universidad Católica San Pablo",
           "university_canonical": "Universidad Católica San Pablo (UCSP)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado, Doutor,",
@@ -25733,7 +25733,7 @@
           "university": "Universidade Federal de Minas Gerais",
           "university_canonical": "Universidade Federal de Minas Gerais",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ciencias de la Computación,",
@@ -25741,7 +25741,7 @@
           "university": "Universidade Federal de Ouro Preto",
           "university_canonical": "Universidade Federal de Ouro Preto",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -26551,7 +26551,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería de Alimentos,",
@@ -26559,7 +26559,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado, Ciencia de la Ingeniería de Alimentos,",
@@ -26567,7 +26567,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -26913,7 +26913,7 @@
           "university": "Universidad de Grenoble-Alpes",
           "university_canonical": "Universidad de Grenoble-Alpes",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -27565,7 +27565,7 @@
           "university": "Universidad Nacional De Educación Enrique Guzmán Y Valle",
           "university_canonical": "Universidad Nacional De Educación Enrique Guzmán Y Valle",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ingeniera Mecánica,",
@@ -27675,7 +27675,7 @@
           "university": "University of New South Wales",
           "university_canonical": "University of New South Wales",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Atmósfera, Océano y Clima,",
@@ -27683,7 +27683,7 @@
           "university": "University of Reading",
           "university_canonical": "University of Reading",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -27952,7 +27952,7 @@
           "university": "Universidad Catolica Santa Maria",
           "university_canonical": "Universidad Catolica Santa Maria",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, MSC Ingeniería Industrial,",
@@ -27960,7 +27960,7 @@
           "university": "Universidad Estatal De Ohio",
           "university_canonical": "Universidad Estatal De Ohio",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -28162,7 +28162,7 @@
           "university": "Universidad Nacional De Educación Enrique Guzmán Y Valle",
           "university_canonical": "Universidad Nacional De Educación Enrique Guzmán Y Valle",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Maestro en Ciencias con mención en Ingeniería de Sistemas,",
@@ -28370,7 +28370,7 @@
           "university": "Pontifícia Universidade Católica do Rio de Janeiro",
           "university_canonical": "Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en Ingeniería de los Materiales,",
@@ -28378,7 +28378,7 @@
           "university": "Universidad Industrial de Santander",
           "university_canonical": "Universidad Industrial de Santander",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Ingeniera Química,",
@@ -28386,7 +28386,7 @@
           "university": "Universidad Industrial de Santander",
           "university_canonical": "Universidad Industrial de Santander",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -28983,7 +28983,7 @@
           "university": "University of Campinas (UNICAMP)",
           "university_canonical": "University of Campinas (UNICAMP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -29074,7 +29074,7 @@
           "university": "Universidad Politecnica De Madrid",
           "university_canonical": "Universidad Politecnica De Madrid",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -29385,7 +29385,7 @@
           "university": "Universidad Catolica Santa Maria",
           "university_canonical": "Universidad Catolica Santa Maria",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Electrónica,",
@@ -29393,7 +29393,7 @@
           "university": "Universidad Catolica Santa Maria",
           "university_canonical": "Universidad Catolica Santa Maria",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Industrial,",
@@ -29401,7 +29401,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster en Ciencias, con mención en Visión, Imagen y Robótica,",
@@ -29409,7 +29409,7 @@
           "university": "University Heriot-Watt",
           "university_canonical": "University Heriot-Watt",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctor en Informática y Robótica,",
@@ -29417,7 +29417,7 @@
           "university": "University of Toulouse",
           "university_canonical": "University of Toulouse",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Máster en Ciencias, Tecnologías, Salud, Con Fines De Investigación, mención: Ciencias y Tecnologías de la Información y de la Comunicación: Informática - Electrónica, Especialidad: Imagen, Informática e Ingeniería,",
@@ -29425,7 +29425,7 @@
           "university": "Université De Dijon",
           "university_canonical": "Université De Dijon",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -30071,7 +30071,7 @@
           "university": "Universidad de Zaragoza",
           "university_canonical": "Universidad de Zaragoza",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -30513,7 +30513,7 @@
           "university": "Universidad De Buenos Aires",
           "university_canonical": "Universidad De Buenos Aires",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado en Ciencias Biológicas,",
@@ -30521,7 +30521,7 @@
           "university": "Universidad Estatal De Arkansas",
           "university_canonical": "Universidad Estatal De Arkansas",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Maestría en Docencia Universitaria y Gestión Educativa,",
@@ -30703,7 +30703,7 @@
           "university": "Université Toulouse III - Paul Sabatier",
           "university_canonical": "Université Toulouse III - Paul Sabatier",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctor en Ciencias de la Tierra, el Universo y el Espacio, en la especialidad de Superficies e Interfaces Continentales, e Hidrología,",
@@ -30711,7 +30711,7 @@
           "university": "Université Toulouse III - Paul Sabatier",
           "university_canonical": "Université Toulouse III - Paul Sabatier",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -32229,7 +32229,7 @@
           "university": "Universidad Simón Bolivar",
           "university_canonical": "Universidad Simón Bolívar",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Magister en Matemáticas Pura,",
@@ -32237,7 +32237,7 @@
           "university": "Universidad Simón Bolivar",
           "university_canonical": "Universidad Simón Bolívar",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Ingeniería de Computación,",
@@ -32245,7 +32245,7 @@
           "university": "Universidad Simón Bolivar",
           "university_canonical": "Universidad Simón Bolívar",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -32569,7 +32569,7 @@
           "university": "Universidade Federal de Minas Gerais",
           "university_canonical": "Universidade Federal de Minas Gerais",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -32649,7 +32649,7 @@
           "university": "Universidad Autónoma de Madrid",
           "university_canonical": "Universidad Autónoma de Madrid",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Biología,",
@@ -32657,7 +32657,7 @@
           "university": "Universidad Ricardo Palma",
           "university_canonical": "Universidad Ricardo Palma",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ciencia y Gestión Marina y Lacustre,  →",
@@ -32665,7 +32665,7 @@
           "university": "Vrije Universiteit Brussel / Universiteit Gent / Universiteit Antwerpen",
           "university_canonical": "Vrije Universiteit Brussel / Universiteit Gent / Universiteit Antwerpen",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Biología ,  →",
@@ -32673,7 +32673,7 @@
           "university": "Universidad Ricardo Palma",
           "university_canonical": "Universidad Ricardo Palma",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -33000,7 +33000,7 @@
           "university": "University of Delaware",
           "university_canonical": "University of Delaware",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -33976,7 +33976,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller EN INGENIERÍA QUÍMICA,",
@@ -33984,7 +33984,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -34541,7 +34541,7 @@
           "university": "University of Zurich",
           "university_canonical": "University of Zurich",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ciencia de la Computación,",
@@ -34549,7 +34549,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Computación, Área de Especialización: Computación Visual,  →",
@@ -34557,7 +34557,7 @@
           "university": "Universidade Federal Fluminense",
           "university_canonical": "Universidade Federal Fluminense",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ciencia de la Computación ,  →",
@@ -34565,7 +34565,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -34746,7 +34746,7 @@
           "university": "Johns Hopkins University",
           "university_canonical": "Johns Hopkins University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Master en Ingeniería Mecánica,",
@@ -34754,7 +34754,7 @@
           "university": "Pontifícia Universidade Católica do Rio de Janeiro",
           "university_canonical": "Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Mecánica,",
@@ -35868,7 +35868,7 @@
           "university": "Universidad Nacional de Trujillo",
           "university_canonical": "Universidad Nacional de Trujillo",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, en Ciencias de la Computación,",
@@ -35876,7 +35876,7 @@
           "university": "Universidad Nacional de Trujillo",
           "university_canonical": "Universidad Nacional de Trujillo",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado, en Ciencias con Mención en Computación,",
@@ -35884,7 +35884,7 @@
           "university": "University of Chile",
           "university_canonical": "University of Chile",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -36149,7 +36149,7 @@
           "university": "Universidad Nacional de Colombia Bogotá",
           "university_canonical": "Universidad Nacional de Colombia Bogotá",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Magíster en Química,",
@@ -36157,7 +36157,7 @@
           "university": "Universidad de Antioquia",
           "university_canonical": "Universidad de Antioquia",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado,  Doctor en Ciencias Químicas,",
@@ -36165,7 +36165,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -36841,7 +36841,7 @@
           "university": "North Carolina State University",
           "university_canonical": "North Carolina State University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bióloga,",
@@ -37808,7 +37808,7 @@
           "university": "National University of Singapore",
           "university_canonical": "National University of Singapore",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ing. Informática,",
@@ -37816,7 +37816,7 @@
           "university": "Universidad Católica San Pablo",
           "university_canonical": "Universidad Católica San Pablo (UCSP)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Ingeniería Informática,",
@@ -37824,7 +37824,7 @@
           "university": "Universidad Católica San Pablo",
           "university_canonical": "Universidad Católica San Pablo (UCSP)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -38075,7 +38075,7 @@
           "university": "National University of Science and Technology “MISIS”",
           "university_canonical": "National University of Science and Technology “MISIS”",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Science in Physics ,  →",
@@ -38083,7 +38083,7 @@
           "university": "National Research Nuclear University MEPhI",
           "university_canonical": "National Research Nuclear University MEPhI",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Science in Physics ,  →",
@@ -38091,7 +38091,7 @@
           "university": "National Research Nuclear University MEPhI",
           "university_canonical": "National Research Nuclear University MEPhI",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -39099,7 +39099,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Título universitario, Ingeniera Informática,",
@@ -39107,7 +39107,7 @@
           "university": "Universidad Católica San Pablo",
           "university_canonical": "Universidad Católica San Pablo (UCSP)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería Informática,",
@@ -39115,7 +39115,7 @@
           "university": "Universidad Católica San Pablo",
           "university_canonical": "Universidad Católica San Pablo (UCSP)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado, Ciencias, Programa de Ciencias de la Computación y Matemática Computacional,",
@@ -39123,7 +39123,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ciencias en el Programa de Ciencias de la Computación y Matemática Computacional,",
@@ -39131,7 +39131,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -40270,7 +40270,7 @@
           "university": "Northwestern University",
           "university_canonical": "Northwestern University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, en Economía,",
@@ -40357,7 +40357,7 @@
           "university": "Columbia University",
           "university_canonical": "Columbia University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Humanidades con mención en Historia,",
@@ -40373,7 +40373,7 @@
           "university": "University of California, Berkeley",
           "university_canonical": "University of California, Berkeley",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -40581,7 +40581,7 @@
           "university": "University of Mississippi",
           "university_canonical": "University of Mississippi",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería Mecánica,  →",
@@ -40759,7 +40759,7 @@
           "university": "Gyeongsang National University",
           "university_canonical": "Gyeongsang National University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ingeniería Aeroespacial,  →",
@@ -40767,7 +40767,7 @@
           "university": "Gyeongsang National University",
           "university_canonical": "Gyeongsang National University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniería Aeronáutica,  →",
@@ -40996,7 +40996,7 @@
           "university": "Texas A and M University",
           "university_canonical": "Texas A and M University",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Ingeniero Químico,",
@@ -41479,7 +41479,7 @@
           "university": "Pontifícia Universidade Católica do Rio de Janeiro",
           "university_canonical": "Pontifícia Universidade Católica do Rio de Janeiro (PUC-Rio)",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Doctorado, Doctor en Ciencias de la Computación,",
@@ -41487,7 +41487,7 @@
           "university": "Universidade Federal do Rio Grande",
           "university_canonical": "Universidade Federal do Rio Grande",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -42178,7 +42178,7 @@
           "university": "Universidade de São Paulo",
           "university_canonical": "Universidade de São Paulo (USP)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Ciencias de la Computación,  →",
@@ -42186,7 +42186,7 @@
           "university": "Universidade Federal do ABC",
           "university_canonical": "Universidade Federal do ABC",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Ingeniera de Sistemas,  →",
@@ -42523,7 +42523,7 @@
           "university": "Universidad Nacional De Investigación",
           "university_canonical": "Universidad Nacional De Investigación",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller EN MATEMÁTICA,",
@@ -42627,7 +42627,7 @@
           "university": "University of California, Santa Cruz",
           "university_canonical": "University of California, Santa Cruz",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -42717,7 +42717,7 @@
           "university": "Universidad Nacional Autónoma de México",
           "university_canonical": "Universidad Nacional Autónoma de México (UNAM)",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller en Medicina,",
@@ -42725,7 +42725,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Médico - Cirujano,",
@@ -42733,7 +42733,7 @@
           "university": "Universidad Nacional de San Agustín",
           "university_canonical": "Universidad Nacional de San Agustín (UNSA)",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -43713,7 +43713,7 @@
           "university": "Universidad de Piura",
           "university_canonical": "Universidad de Piura",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, en Ingeniería Química",
@@ -43729,7 +43729,7 @@
           "university": "Universidad de Oviedo",
           "university_canonical": "Universidad de Oviedo",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [],
@@ -43810,7 +43810,7 @@
           "university": "Université Pierre et Marie Curie/CNRS",
           "university_canonical": "Université Pierre et Marie Curie/CNRS",
           "degree_level": "PhD",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Master en Ciencias en Microingeniería con énfasis en Micro y Nanosistema,",
@@ -44746,7 +44746,7 @@
           "university": "Universidad Castilla La Mancha",
           "university_canonical": "Universidad Castilla La Mancha",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         }
       ],
       "internal_orgs": [
@@ -45168,7 +45168,7 @@
           "university": "Kyoto University",
           "university_canonical": "Kyoto University",
           "degree_level": "Other",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, Estudios Humanos Y Ambientales, en La Especialidad De Estudios Integrados Ambientales ,",
@@ -45176,7 +45176,7 @@
           "university": "Kyoto University",
           "university_canonical": "Kyoto University",
           "degree_level": "Masters",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller, Bachiller En Ciencias Forestales,",
@@ -46026,7 +46026,7 @@
           "university": "Universidad De San Martin De Porres",
           "university_canonical": "Universidad de San Martín de Porres (USMP)",
           "degree_level": "Professional",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Bachiller EN CIENCIAS DE LA COMUNICACIÓN,",
@@ -46034,7 +46034,7 @@
           "university": "Universidad De San Martin De Porres",
           "university_canonical": "Universidad de San Martín de Porres (USMP)",
           "degree_level": "Bachelor",
-          "is_international": false
+          "is_international": true
         },
         {
           "title": "Máster, EN SOCIOLOGÍA DE LAS ORGANIZACIONES,",
@@ -46644,20 +46644,12 @@
   ],
   "predicted_links": [
     {
-      "source": "ruth-canahuire-cabello",
-      "target": "wando-kim",
+      "source": "wando-kim",
+      "target": "ruth-canahuire-cabello",
       "score": 1.8205,
       "common_neighbors": 2,
-      "source_dept": "UNK",
-      "target_dept": "ME"
-    },
-    {
-      "source": "christian-flores-vega",
-      "target": "wando-kim",
-      "score": 1.4427,
-      "common_neighbors": 1,
-      "source_dept": "EE",
-      "target_dept": "ME"
+      "source_dept": "ME",
+      "target_dept": "UNK"
     },
     {
       "source": "leandro-neodini-remedio",
@@ -46668,44 +46660,20 @@
       "target_dept": "BIO"
     },
     {
-      "source": "elvis-jara-alegria",
-      "target": "jimmy-tarrillo-olano",
+      "source": "wando-kim",
+      "target": "christian-flores-vega",
       "score": 1.4427,
       "common_neighbors": 1,
-      "source_dept": "EE",
-      "target_dept": "UNK"
-    },
-    {
-      "source": "emir-augusto-vela-saavedra",
-      "target": "eunice-villicana-ortiz",
-      "score": 0.9102,
-      "common_neighbors": 1,
       "source_dept": "ME",
-      "target_dept": "UNK"
+      "target_dept": "EE"
     },
     {
-      "source": "emir-augusto-vela-saavedra",
-      "target": "heinner-hilario-guio-chunga",
-      "score": 0.9102,
+      "source": "jimmy-tarrillo-olano",
+      "target": "elvis-jara-alegria",
+      "score": 1.4427,
       "common_neighbors": 1,
-      "source_dept": "ME",
-      "target_dept": "BIO"
-    },
-    {
-      "source": "helard-alvarez-sanchez",
-      "target": "eunice-villicana-ortiz",
-      "score": 0.9102,
-      "common_neighbors": 1,
-      "source_dept": "ME",
-      "target_dept": "UNK"
-    },
-    {
-      "source": "jose-luis-mantari-laureano",
-      "target": "wando-kim",
-      "score": 0.9102,
-      "common_neighbors": 1,
-      "source_dept": "SCI",
-      "target_dept": "ME"
+      "source_dept": "UNK",
+      "target_dept": "EE"
     },
     {
       "source": "julio-ernesto-valdivia-silva",
@@ -46717,6 +46685,14 @@
     },
     {
       "source": "eunice-villicana-ortiz",
+      "target": "helard-alvarez-sanchez",
+      "score": 0.9102,
+      "common_neighbors": 1,
+      "source_dept": "UNK",
+      "target_dept": "ME"
+    },
+    {
+      "source": "eunice-villicana-ortiz",
       "target": "deyby-huamanchahua-canchanya",
       "score": 0.9102,
       "common_neighbors": 1,
@@ -46724,12 +46700,12 @@
       "target_dept": "EE"
     },
     {
-      "source": "heinner-hilario-guio-chunga",
-      "target": "ruth-canahuire-cabello",
+      "source": "eunice-villicana-ortiz",
+      "target": "emir-augusto-vela-saavedra",
       "score": 0.9102,
       "common_neighbors": 1,
-      "source_dept": "BIO",
-      "target_dept": "UNK"
+      "source_dept": "UNK",
+      "target_dept": "ME"
     },
     {
       "source": "claudia-antonini-bova",
@@ -46740,6 +46716,38 @@
       "target_dept": "SCI"
     },
     {
+      "source": "wando-kim",
+      "target": "jose-luis-mantari-laureano",
+      "score": 0.9102,
+      "common_neighbors": 1,
+      "source_dept": "ME",
+      "target_dept": "SCI"
+    },
+    {
+      "source": "jimmy-tarrillo-olano",
+      "target": "deyby-huamanchahua-canchanya",
+      "score": 0.9102,
+      "common_neighbors": 1,
+      "source_dept": "UNK",
+      "target_dept": "EE"
+    },
+    {
+      "source": "emir-augusto-vela-saavedra",
+      "target": "heinner-hilario-guio-chunga",
+      "score": 0.9102,
+      "common_neighbors": 1,
+      "source_dept": "ME",
+      "target_dept": "BIO"
+    },
+    {
+      "source": "ruth-canahuire-cabello",
+      "target": "heinner-hilario-guio-chunga",
+      "score": 0.9102,
+      "common_neighbors": 1,
+      "source_dept": "UNK",
+      "target_dept": "BIO"
+    },
+    {
       "source": "alberto-donayre-torres",
       "target": "jose-renom-andara",
       "score": 0.9102,
@@ -46748,20 +46756,12 @@
       "target_dept": "SCI"
     },
     {
-      "source": "deyby-huamanchahua-canchanya",
-      "target": "jimmy-tarrillo-olano",
-      "score": 0.9102,
-      "common_neighbors": 1,
-      "source_dept": "EE",
-      "target_dept": "UNK"
-    },
-    {
-      "source": "jose-luis-mantari-laureano",
-      "target": "ursula-rodriguez-zuniga",
+      "source": "ursula-rodriguez-zuniga",
+      "target": "jose-luis-mantari-laureano",
       "score": 0.7213,
       "common_neighbors": 1,
-      "source_dept": "SCI",
-      "target_dept": "BIO"
+      "source_dept": "BIO",
+      "target_dept": "SCI"
     }
   ],
   "communities": [
@@ -46769,13 +46769,13 @@
       "index": 0,
       "label": "engineering · and · computer",
       "member_ids": [
-        "helard-alvarez-sanchez",
-        "heinner-hilario-guio-chunga",
-        "eunice-villicana-ortiz",
-        "ruth-canahuire-cabello",
-        "emir-augusto-vela-saavedra",
         "wando-kim",
         "julio-ernesto-valdivia-silva",
+        "heinner-hilario-guio-chunga",
+        "emir-augusto-vela-saavedra",
+        "ruth-canahuire-cabello",
+        "helard-alvarez-sanchez",
+        "eunice-villicana-ortiz",
         "oscar-ramos-ponce"
       ]
     },
@@ -46783,11 +46783,11 @@
       "index": 1,
       "label": "engineering · science · material",
       "member_ids": [
+        "leandro-neodini-remedio",
         "jose-ramos-saravia",
-        "samuel-charca-mamani",
         "jose-luis-mantari-laureano",
         "carolina-parada-quinaya",
-        "leandro-neodini-remedio",
+        "samuel-charca-mamani",
         "carmen-elena-flores-barreda"
       ]
     },
@@ -46796,29 +46796,29 @@
       "label": "engineering · computer · science",
       "member_ids": [
         "moises-nunez-ochoa",
-        "elvis-jara-alegria",
-        "christian-flores-vega",
+        "deyby-huamanchahua-canchanya",
         "jimmy-tarrillo-olano",
         "dante-inga-narvaez",
-        "deyby-huamanchahua-canchanya"
+        "elvis-jara-alegria",
+        "christian-flores-vega"
       ]
     },
     {
       "index": 3,
       "label": "and · molecular · biology",
       "member_ids": [
+        "alberto-donayre-torres",
         "monica-cecilia-santa-maria-fuster",
-        "claudia-antonini-bova",
         "jose-renom-andara",
-        "alberto-donayre-torres"
+        "claudia-antonini-bova"
       ]
     },
     {
       "index": 4,
       "label": "engineering · ingeniería · chemical",
       "member_ids": [
-        "francisco-tarazona-vasquez",
         "ursula-rodriguez-zuniga",
+        "francisco-tarazona-vasquez",
         "juan-carlos-rodriguez-reyes"
       ]
     },
@@ -46826,32 +46826,32 @@
       "index": 5,
       "label": "engineering · concrete · material",
       "member_ids": [
-        "luis-alberto-bedrinana-mera",
-        "carlos-alberto-benedetty-torres"
+        "carlos-alberto-benedetty-torres",
+        "luis-alberto-bedrinana-mera"
       ]
     },
     {
       "index": 6,
       "label": "computer · science · point",
       "member_ids": [
-        "cristian-lopez-del-alamo",
-        "luciano-arnaldo-romero-calla"
+        "luciano-arnaldo-romero-calla",
+        "cristian-lopez-del-alamo"
       ]
     },
     {
       "index": 7,
       "label": "física · physics · nuclear",
       "member_ids": [
-        "diego-alejandro-milanes-carreno",
-        "evgenii-vladimirovich-shmanin"
+        "evgenii-vladimirovich-shmanin",
+        "diego-alejandro-milanes-carreno"
       ]
     },
     {
       "index": 8,
       "label": "physics · gravedad · black",
       "member_ids": [
-        "sashwat-tanay",
-        "jose-tomas-galvez-ghersi"
+        "jose-tomas-galvez-ghersi",
+        "sashwat-tanay"
       ]
     },
     {
@@ -53552,10 +53552,94 @@
         "h_index": 3
       },
       {
+        "id": "patricia-araujo-pantoja",
+        "name": "Patricia Araujo Pantoja",
+        "university": "Instituto de Química de la Universidad de São Paulo",
+        "h_index": 4
+      },
+      {
+        "id": "andres-julian-arias-moreno",
+        "name": "Andrés Julián Arias Moreno",
+        "university": "Eindhoven University of Technology",
+        "h_index": 4
+      },
+      {
+        "id": "walter-sebastian-barrutia-alta",
+        "name": "Walter Sebastian Barrutia Alta",
+        "university": "University of Florida",
+        "h_index": 3
+      },
+      {
+        "id": "luis-alberto-bedrinana-mera",
+        "name": "Luis Alberto Bedriñana Mera",
+        "university": "Kyoto University",
+        "h_index": 6
+      },
+      {
+        "id": "jesus-edwin-bellido-angulo",
+        "name": "Jesús Edwin Bellido Angulo",
+        "university": "Pontificia Universidad Catolica de Chile",
+        "h_index": 4
+      },
+      {
+        "id": "carlos-alberto-benedetty-torres",
+        "name": "Carlos Alberto Benedetty Torres",
+        "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
+        "h_index": 4
+      },
+      {
+        "id": "jhedmar-jhonatan-callupe-luna",
+        "name": "Jhedmar Jhonatan Callupe Luna",
+        "university": "Université Paris Saclay",
+        "h_index": 2
+      },
+      {
+        "id": "ruth-canahuire-cabello",
+        "name": "Ruth Canahuire Cabello",
+        "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
+        "h_index": 6
+      },
+      {
         "id": "paul-cardenas-lizana",
         "name": "Paul Cardenas Lizana",
         "university": "Georgia TECH",
         "h_index": 3
+      },
+      {
+        "id": "ana-rocio-cardenas-maita",
+        "name": "Ana Rocio Cardenas Maita",
+        "university": "Universidade de São Paulo",
+        "h_index": 4
+      },
+      {
+        "id": "jose-javier-cerda-hernandez",
+        "name": "Jose Javier Cerda Hernandez",
+        "university": "Universidade de São Paulo",
+        "h_index": 4
+      },
+      {
+        "id": "samuel-charca-mamani",
+        "name": "Samuel Charca Mamani",
+        "university": "University of Puerto Rico",
+        "h_index": 13
+      },
+      {
+        "id": "sheyla-chero-osorio",
+        "name": "Sheyla Chero Osorio",
+        "university": "University of South Florida, Tampa",
+        "h_index": 1
+      },
+      {
+        "id": "fabien-cornillier",
+        "name": "Fabien Cornillier",
+        "university": "Université Laval",
+        "h_index": 8
+      },
+      {
+        "id": "jose-andres-de-leo-martinez",
+        "name": "José Andrés De Leo Martínez",
+        "university": "Universidad Nacional Autónoma de México",
+        "h_index": 1
       },
       {
         "id": "alberto-donayre-torres",
@@ -53564,15 +53648,291 @@
         "h_index": 5
       },
       {
+        "id": "jose-fiestas-iquira",
+        "name": "Jose Fiestas Iquira",
+        "university": "Universidad de Heidelberg, Alemania",
+        "h_index": 5
+      },
+      {
+        "id": "jose-tomas-galvez-ghersi",
+        "name": "José Tomás Gálvez Ghersi",
+        "university": "Simon Fraser University",
+        "h_index": 8
+      },
+      {
+        "id": "germain-garcia-zanabria",
+        "name": "Germain García Zanabria",
+        "university": "Universidade de São Paulo",
+        "h_index": 7
+      },
+      {
+        "id": "jorge-gonzalez-reano",
+        "name": "Jorge Gonzalez Reaño",
+        "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
+        "h_index": 3
+      },
+      {
+        "id": "heinner-hilario-guio-chunga",
+        "name": "Heinner Hilario Guio Chunga",
+        "university": "Tohoku University",
+        "h_index": 17
+      },
+      {
+        "id": "ronald-r-gutierrez",
+        "name": "Ronald R. Gutierrez",
+        "university": "University of Pittsburgh",
+        "h_index": 10
+      },
+      {
+        "id": "juan-gabriel-gutierrez-alva",
+        "name": "Juan Gabriel Gutierrez Alva",
+        "university": "Universidade de São Paulo",
+        "h_index": 3
+      },
+      {
+        "id": "daniel-vicente-horna-munoz",
+        "name": "Daniel Vicente Horna Muñoz",
+        "university": "University of Iowa",
+        "h_index": 8
+      },
+      {
         "id": "deyby-huamanchahua-canchanya",
         "name": "Deyby Huamanchahua Canchanya",
         "university": "Instituto Tecnológico y de Estudios Superiores de Monterrey",
         "h_index": 12
       },
       {
+        "id": "dante-inga-narvaez",
+        "name": "Dante Inga Narvaez",
+        "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
+        "h_index": 5
+      },
+      {
+        "id": "elvis-jara-alegria",
+        "name": "Elvis Jara Alegria",
+        "university": "Universidade Estadual de Campinas (UNICAMP), Brasil",
+        "h_index": 5
+      },
+      {
+        "id": "wando-kim",
+        "name": "Wangdo Kim",
+        "university": "Lehigh University",
+        "h_index": 14
+      },
+      {
+        "id": "jose-larco-martinelli",
+        "name": "Jose Larco Martinelli",
+        "university": "Rotterdam School of Management, Erasmus University",
+        "h_index": 3
+      },
+      {
+        "id": "cristian-lopez-del-alamo",
+        "name": "Cristian Lopez Del Alamo",
+        "university": "Universidad Nacional de San Agustín",
+        "h_index": 6
+      },
+      {
+        "id": "jose-luis-mantari-laureano",
+        "name": "José Luis Mantari Laureano",
+        "university": "Technical University of Lisbon",
+        "h_index": 32
+      },
+      {
+        "id": "diego-alejandro-milanes-carreno",
+        "name": "Diego Alejandro Milanés Carreño",
+        "university": "UNIVERSITAT DE VALÈNCIA",
+        "h_index": 120
+      },
+      {
+        "id": "rensso-victor-hugo-mora-colque",
+        "name": "Rensso Victor Hugo Mora Colque",
+        "university": "Universidade Federal de Minas Gerais",
+        "h_index": 5
+      },
+      {
+        "id": "leandro-neodini-remedio",
+        "name": "Leandro Neodini Remedio",
+        "university": "Universidade de São Paulo",
+        "h_index": 4
+      },
+      {
+        "id": "moises-nunez-ochoa",
+        "name": "Moises Nuñez Ochoa",
+        "university": "Universidad de Grenoble-Alpes",
+        "h_index": 6
+      },
+      {
+        "id": "bryam-orihuela-pinto",
+        "name": "Bryam Orihuela-Pinto",
+        "university": "University of New South Wales",
+        "h_index": 3
+      },
+      {
+        "id": "hermes-pantoja-carhuavilca",
+        "name": "Hermes Pantoja Carhuavilca",
+        "university": "Universidad Nacional De Educación Enrique Guzmán Y Valle",
+        "h_index": 0
+      },
+      {
+        "id": "carolina-parada-quinaya",
+        "name": "Carolina Parada Quinaya",
+        "university": "Pontifícia Universidade Católica do Rio de Janeiro",
+        "h_index": 7
+      },
+      {
+        "id": "oscar-ramos-ponce",
+        "name": "Oscar Ramos Ponce",
+        "university": "University of Toulouse",
+        "h_index": 11
+      },
+      {
+        "id": "jose-ramos-saravia",
+        "name": "José Ramos Saravia",
+        "university": "Universidad de Zaragoza",
+        "h_index": 7
+      },
+      {
+        "id": "alejandra-ratti-parandelli",
+        "name": "Alejandra Ratti Parandelli",
+        "university": "Universidad Estatal De Arkansas",
+        "h_index": 0
+      },
+      {
+        "id": "pedro-rau-lavado",
+        "name": "Pedro Rau Lavado",
+        "university": "Université Toulouse III - Paul Sabatier",
+        "h_index": 15
+      },
+      {
+        "id": "jose-renom-andara",
+        "name": "Jose Renom Andara",
+        "university": "Universidad Simón Bolivar",
+        "h_index": 7
+      },
+      {
+        "id": "alejandro-rios-cuadros",
+        "name": "Alejandro Rios Cuadros",
+        "university": "Universidade Federal de Minas Gerais",
+        "h_index": 0
+      },
+      {
+        "id": "lucia-rivera-charun",
+        "name": "Lucia Rivera Charún",
+        "university": "Universidad Autónoma de Madrid",
+        "h_index": 1
+      },
+      {
+        "id": "juan-carlos-rodriguez-reyes",
+        "name": "Juan Carlos Rodríguez Reyes",
+        "university": "University of Delaware",
+        "h_index": 18
+      },
+      {
+        "id": "luciano-arnaldo-romero-calla",
+        "name": "Luciano Arnaldo Romero Calla",
+        "university": "University of Zurich",
+        "h_index": 2
+      },
+      {
+        "id": "harry-gustavo-saavedra-espinoza",
+        "name": "Harry Gustavo Saavedra Espinoza",
+        "university": "Johns Hopkins University",
+        "h_index": 7
+      },
+      {
+        "id": "heider-sanchez-enriquez",
+        "name": "Heider Sánchez Enriquez",
+        "university": "University of Chile",
+        "h_index": 4
+      },
+      {
+        "id": "nedher-sanchez-ramirez",
+        "name": "Nedher Sanchez Ramirez",
+        "university": "Universidade de São Paulo",
+        "h_index": 10
+      },
+      {
+        "id": "monica-cecilia-santa-maria-fuster",
+        "name": "Monica C. Santa-Maria",
+        "university": "North Carolina State University",
+        "h_index": 12
+      },
+      {
+        "id": "yamilet-rosario-serrano-llerena",
+        "name": "Yamilet Rosario Serrano Llerena",
+        "university": "National University of Singapore",
+        "h_index": 3
+      },
+      {
+        "id": "evgenii-vladimirovich-shmanin",
+        "name": "Evgenii Vladimirovich Shmanin",
+        "university": "National University of Science and Technology “MISIS”",
+        "h_index": 0
+      },
+      {
+        "id": "aurea-rossy-soriano-vargas",
+        "name": "Aurea Rossy Soriano Vargas",
+        "university": "Universidade de São Paulo",
+        "h_index": 7
+      },
+      {
+        "id": "matteo-stiglich-labarthe",
+        "name": "Matteo Stiglich Labarthe",
+        "university": "Columbia University",
+        "h_index": 2
+      },
+      {
+        "id": "sashwat-tanay",
+        "name": "Sashwat Tanay",
+        "university": "University of Mississippi",
+        "h_index": 6
+      },
+      {
+        "id": "jonathan-tapullima",
+        "name": "Jonathan Tapullima",
+        "university": "Gyeongsang National University",
+        "h_index": 2
+      },
+      {
+        "id": "francisco-tarazona-vasquez",
+        "name": "Francisco Tarazona Vásquez",
+        "university": "Texas A and M University",
+        "h_index": 7
+      },
+      {
+        "id": "jimmy-tarrillo-olano",
+        "name": "Jimmy Tarrillo Olano",
+        "university": "Universidade Federal do Rio Grande",
+        "h_index": 7
+      },
+      {
+        "id": "candy-veronica-tenorio-gonzales",
+        "name": "Candy Veronica Tenorio Gonzales",
+        "university": "Universidade de São Paulo",
+        "h_index": 3
+      },
+      {
         "id": "julio-ernesto-valdivia-silva",
         "name": "Julio Ernesto Valdivia Silva",
         "university": "Instituto de Ciencias Nucleares de la UNAM",
+        "h_index": 11
+      },
+      {
+        "id": "julio-ernesto-valdivia-silva",
+        "name": "Julio Ernesto Valdivia Silva",
+        "university": "Universidad Nacional Autónoma de México",
+        "h_index": 11
+      },
+      {
+        "id": "elba-rosaura-vazques-arrieta",
+        "name": "Elba Rosaura Vazques Arrieta",
+        "university": "Universidad de Oviedo",
+        "h_index": 0
+      },
+      {
+        "id": "emir-augusto-vela-saavedra",
+        "name": "Emir Augusto Vela Saavedra",
+        "university": "Université Pierre et Marie Curie/CNRS",
         "h_index": 11
       }
     ],
@@ -53622,7 +53982,7 @@
         "name": "Sergio Aranda Egusquiza",
         "dept_code": "EE",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 1
       },
       {
@@ -53630,7 +53990,7 @@
         "name": "Patricia Araujo Pantoja",
         "dept_code": "ME",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -53638,7 +53998,7 @@
         "name": "Andrés Julián Arias Moreno",
         "dept_code": "BIO",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -53646,7 +54006,7 @@
         "name": "Walter Sebastian Barrutia Alta",
         "dept_code": "EE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 3
       },
       {
@@ -53654,7 +54014,7 @@
         "name": "Luis Alberto Bedriñana Mera",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 6
       },
       {
@@ -53670,7 +54030,7 @@
         "name": "Jesús Edwin Bellido Angulo",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -53678,7 +54038,7 @@
         "name": "Carlos Alberto Benedetty Torres",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -53702,7 +54062,7 @@
         "name": "Jhedmar Jhonatan Callupe Luna",
         "dept_code": "EE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 2
       },
       {
@@ -53710,7 +54070,7 @@
         "name": "Ruth Canahuire Cabello",
         "dept_code": "UNK",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 6
       },
       {
@@ -53726,7 +54086,7 @@
         "name": "Ana Rocio Cardenas Maita",
         "dept_code": "SYS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -53734,7 +54094,7 @@
         "name": "Jose Javier Cerda Hernandez",
         "dept_code": "UNK",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -53742,7 +54102,7 @@
         "name": "Samuel Charca Mamani",
         "dept_code": "ME",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 13
       },
       {
@@ -53758,7 +54118,7 @@
         "name": "Sheyla Chero Osorio",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 1
       },
       {
@@ -53766,7 +54126,7 @@
         "name": "Fabien Cornillier",
         "dept_code": "IE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 8
       },
       {
@@ -53790,7 +54150,7 @@
         "name": "José Andrés De Leo Martínez",
         "dept_code": "HUM",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 1
       },
       {
@@ -53822,7 +54182,7 @@
         "name": "Jose Fiestas Iquira",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 5
       },
       {
@@ -53846,7 +54206,7 @@
         "name": "Christian Flores Vega",
         "dept_code": "EE",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -53854,7 +54214,7 @@
         "name": "José Tomás Gálvez Ghersi",
         "dept_code": "SCI",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 8
       },
       {
@@ -53870,7 +54230,7 @@
         "name": "Germain García Zanabria",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -53878,7 +54238,7 @@
         "name": "Jorge Gonzalez Reaño",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 3
       },
       {
@@ -53886,7 +54246,7 @@
         "name": "Heinner Hilario Guio Chunga",
         "dept_code": "BIO",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 17
       },
       {
@@ -53894,7 +54254,7 @@
         "name": "Ronald R. Gutierrez",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 10
       },
       {
@@ -53902,7 +54262,7 @@
         "name": "Juan Gabriel Gutierrez Alva",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 3
       },
       {
@@ -53910,7 +54270,7 @@
         "name": "Julio Gutierrez Alva",
         "dept_code": "CS",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 1
       },
       {
@@ -53934,7 +54294,7 @@
         "name": "Daniel Vicente Horna Muñoz",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 8
       },
       {
@@ -53942,7 +54302,7 @@
         "name": "Rocío Hoyos Diaz",
         "dept_code": "SCI",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -53958,7 +54318,7 @@
         "name": "Dante Inga Narvaez",
         "dept_code": "EE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 5
       },
       {
@@ -53966,7 +54326,7 @@
         "name": "Elvis Jara Alegria",
         "dept_code": "EE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 5
       },
       {
@@ -53982,7 +54342,7 @@
         "name": "Wangdo Kim",
         "dept_code": "ME",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 14
       },
       {
@@ -53990,7 +54350,7 @@
         "name": "Jose Larco Martinelli",
         "dept_code": "IE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 3
       },
       {
@@ -53998,7 +54358,7 @@
         "name": "Cristian Lopez Del Alamo",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 6
       },
       {
@@ -54014,7 +54374,7 @@
         "name": "José Luis Mantari Laureano",
         "dept_code": "SCI",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 32
       },
       {
@@ -54030,7 +54390,7 @@
         "name": "Diego Alejandro Milanés Carreño",
         "dept_code": "UNK",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 120
       },
       {
@@ -54038,7 +54398,7 @@
         "name": "Rensso Victor Hugo Mora Colque",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 5
       },
       {
@@ -54054,7 +54414,7 @@
         "name": "Leandro Neodini Remedio",
         "dept_code": "UNK",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -54062,7 +54422,7 @@
         "name": "Moises Nuñez Ochoa",
         "dept_code": "EE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 6
       },
       {
@@ -54070,7 +54430,7 @@
         "name": "Vanessa Orihuela Munive",
         "dept_code": "ME",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54078,7 +54438,7 @@
         "name": "Bryam Orihuela-Pinto",
         "dept_code": "UNK",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 3
       },
       {
@@ -54086,7 +54446,7 @@
         "name": "Maria Belén Ortiz García",
         "dept_code": "SYS",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 2
       },
       {
@@ -54094,7 +54454,7 @@
         "name": "Hermes Pantoja Carhuavilca",
         "dept_code": "SCI",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54102,7 +54462,7 @@
         "name": "Carolina Parada Quinaya",
         "dept_code": "BIO",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -54118,7 +54478,7 @@
         "name": "Sergio Quispe Rodriguez",
         "dept_code": "SCI",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54134,7 +54494,7 @@
         "name": "Oscar Ramos Ponce",
         "dept_code": "EE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 11
       },
       {
@@ -54142,7 +54502,7 @@
         "name": "José Ramos Saravia",
         "dept_code": "ME",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -54150,7 +54510,7 @@
         "name": "Alejandra Ratti Parandelli",
         "dept_code": "BIO",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54158,7 +54518,7 @@
         "name": "Pedro Rau Lavado",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 15
       },
       {
@@ -54166,7 +54526,7 @@
         "name": "Jose Renom Andara",
         "dept_code": "SCI",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -54174,7 +54534,7 @@
         "name": "Alejandro Rios Cuadros",
         "dept_code": "SCI",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54182,7 +54542,7 @@
         "name": "Lucia Rivera Charún",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 1
       },
       {
@@ -54190,7 +54550,7 @@
         "name": "Juan Carlos Rodríguez Reyes",
         "dept_code": "BIO",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 18
       },
       {
@@ -54206,7 +54566,7 @@
         "name": "Luciano Arnaldo Romero Calla",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 2
       },
       {
@@ -54214,7 +54574,7 @@
         "name": "Harry Gustavo Saavedra Espinoza",
         "dept_code": "BIO",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -54222,7 +54582,7 @@
         "name": "Heider Sánchez Enriquez",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 4
       },
       {
@@ -54230,7 +54590,7 @@
         "name": "Nedher Sanchez Ramirez",
         "dept_code": "SCI",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 10
       },
       {
@@ -54238,7 +54598,7 @@
         "name": "Monica C. Santa-Maria",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 12
       },
       {
@@ -54246,7 +54606,7 @@
         "name": "Yamilet Rosario Serrano Llerena",
         "dept_code": "SYS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 3
       },
       {
@@ -54254,7 +54614,7 @@
         "name": "Evgenii Vladimirovich Shmanin",
         "dept_code": "UNK",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54262,7 +54622,7 @@
         "name": "Aurea Rossy Soriano Vargas",
         "dept_code": "CS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -54270,7 +54630,7 @@
         "name": "Enrique Stiglich Labarthe",
         "dept_code": "UNK",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54278,7 +54638,7 @@
         "name": "Matteo Stiglich Labarthe",
         "dept_code": "HUM",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 2
       },
       {
@@ -54286,7 +54646,7 @@
         "name": "Sashwat Tanay",
         "dept_code": "SCI",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 6
       },
       {
@@ -54294,7 +54654,7 @@
         "name": "Jonathan Tapullima",
         "dept_code": "EE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 2
       },
       {
@@ -54302,7 +54662,7 @@
         "name": "Francisco Tarazona Vásquez",
         "dept_code": "BIO",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -54310,7 +54670,7 @@
         "name": "Jimmy Tarrillo Olano",
         "dept_code": "UNK",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 7
       },
       {
@@ -54318,7 +54678,7 @@
         "name": "Candy Veronica Tenorio Gonzales",
         "dept_code": "SYS",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 3
       },
       {
@@ -54326,7 +54686,7 @@
         "name": "Jorge Tipe Villanueva",
         "dept_code": "CS",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54334,7 +54694,7 @@
         "name": "David Wilfredo Torres Escobar",
         "dept_code": "UNK",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54350,7 +54710,7 @@
         "name": "Elba Rosaura Vazques Arrieta",
         "dept_code": "CE",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 0
       },
       {
@@ -54358,7 +54718,7 @@
         "name": "Emir Augusto Vela Saavedra",
         "dept_code": "ME",
         "highest_degree": "PhD",
-        "is_international": false,
+        "is_international": true,
         "h_index": 11
       },
       {
@@ -54382,7 +54742,7 @@
         "name": "Akira Armando Wong Sato",
         "dept_code": "UNK",
         "highest_degree": "Masters",
-        "is_international": false,
+        "is_international": true,
         "h_index": 6
       },
       {

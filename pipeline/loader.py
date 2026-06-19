@@ -161,8 +161,14 @@ def _is_international_university(universidad: str) -> bool:
         return False
     name_lower = _strip_accents(universidad.strip().lower())
     for peruvian in _PERUVIAN_UNIVERSITIES:
-        if _strip_accents(peruvian) in name_lower or name_lower in _strip_accents(peruvian):
-            return False
+        peruvian_clean = _strip_accents(peruvian)
+        if len(peruvian_clean) <= 5:
+            # Match short acronyms (e.g., 'uni', 'pucp') as whole words only
+            if peruvian_clean in re.findall(r"\b\w+\b", name_lower):
+                return False
+        else:
+            if peruvian_clean in name_lower or name_lower in peruvian_clean:
+                return False
     # If it contains 'perú' or 'peru' it's likely Peruvian
     if "peru" in name_lower:
         return False

@@ -13,6 +13,7 @@ NM.state = {
   selectedId: null,
   deptFilter: null,        // dept_code to isolate, or null
   uniFilter: null,         // university to isolate, or null
+  groupFilter: null,       // research group to isolate, or null
 };
 
 /* ---- Department vocabulary (matches CSS tokens) ---- */
@@ -64,7 +65,7 @@ NM.EXPLAIN = {
   "mode-degree":      { t: "Most-connected", b: "Circle size grows with the number of distinct co-authors a professor has. The largest circles are the busiest collaborators." },
   "mode-betweenness": { t: "Bridges", b: "An orange ring marks a professor who sits on the shortest path between otherwise-separate groups. Remove them and the network would fragment." },
   "mode-cluster":     { t: "By department", b: "Professors are pulled together by their department, so you can see which departments work tightly and which keep to themselves." },
-  "mode-community":   { t: "Natural groups", b: "Colour comes from a community-detection algorithm, not official departments. It reveals the research clusters that actually form through co-authorship." },
+  "mode-groups":      { t: "Research groups", b: "Color segments represent formal research groups. Multi-colored rings show members of multiple groups, and nodes are pulled dynamically toward all their groups' clusters." },
   "mode-semantic":    { t: "Shared interests", b: "Dashed violet lines connect professors whose research topics overlap (by text analysis) but who have not yet published together — potential collaborators." },
   "mode-almamater":   { t: "Shared alma mater", b: "Thin blue lines join professors who studied at the same university. Reveals hidden alumni networks behind the formal org chart." },
   "mode-flow":        { t: "By impact (h-index)", b: "Professors line up in a grid, sorted by h-index (a measure of citation impact). Forces switch off so the ranking stays exact." },
@@ -72,7 +73,7 @@ NM.EXPLAIN = {
   "edge-toggle": { t: "Which lines?", b: "Switch between confirmed co-authorship (solid grey) and predicted topic similarity (dashed violet)." },
 
   "encoding-size":   { t: "Circle size", b: "Larger circles mean a higher value on the current measure — usually the number of co-authors." },
-  "encoding-color":  { t: "Circle colour", b: "Colour groups professors. Here it encodes their department; in other lenses it encodes a detected community." },
+  "encoding-color":  { t: "Circle colour / Donut", b: "Color groups professors. In 'Research groups' lens, it encodes their group affiliations (multiple segments mean multiple groups)." },
   "encoding-coauthor": { t: "Solid grey line", b: "A confirmed co-authorship. The thicker the line, the more papers the pair share." },
   "encoding-nlp":    { t: "Dashed violet line", b: "A predicted match: similar research topics, no shared paper yet." },
   "encoding-predicted": { t: "Dashed amber line", b: "A predicted future link from shared network neighbours (Adamic-Adar)." },

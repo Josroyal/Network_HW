@@ -72,6 +72,24 @@
     return `<div class="legend-section-label">Department · colour</div><div class="legend-chips">${chips}</div>`;
   }
 
+  function groupChips() {
+    const g = NM.state.graph;
+    const present = {};
+    g.nodes.forEach((n) => {
+      NM.getResearchGroups(n).forEach((groupName) => {
+        if (groupName !== "None") {
+          present[groupName] = (present[groupName] || 0) + 1;
+        }
+      });
+    });
+    const sortedGroups = Object.keys(present).sort((a, b) => present[b] - present[a]);
+    const chips = sortedGroups.map((groupName) => {
+      const dim = NM.state.groupFilter && NM.state.groupFilter !== groupName ? " dim" : "";
+      return `<span class="legend-chip${dim}" data-group="${groupName}"><span class="dot" style="background:${NM.groupColor(groupName)}"></span>${groupName}</span>`;
+    }).join("");
+    return `<div class="legend-section-label">Research group · colour</div><div class="legend-chips">${chips}</div>`;
+  }
+
   // Build the legend for the current mode + edge mode.
   NM.renderLegend = function () {
     const body = document.getElementById("legend-body");
@@ -107,9 +125,8 @@
     }
 
     // Color section
-    if (mode === "community") {
-      html += `<div class="legend-section-label">Colour · detected community</div>`;
-      html += `<div class="legend-row" style="color:var(--ink-3);font-size:.7rem">Colours mark research groups found by the algorithm, ignoring official departments.</div>`;
+    if (mode === "groups") {
+      html += groupChips();
     } else if (mode === "flow") {
       html += `<div class="legend-section-label">Position · h-index rank (high → low)</div>`;
       html += deptChips();
@@ -120,10 +137,20 @@
     body.innerHTML = html;
 
     // Wire chip clicks → department isolate filter
-    body.querySelectorAll(".legend-chip").forEach((chip) => {
+    body.querySelectorAll(".legend-chip[data-dept]").forEach((chip) => {
       chip.addEventListener("click", () => {
         const c = chip.getAttribute("data-dept");
         NM.state.deptFilter = NM.state.deptFilter === c ? null : c;
+        NM.applyFilters();
+        NM.renderLegend();
+      });
+    });
+
+    // Wire chip clicks → research group isolate filter
+    body.querySelectorAll(".legend-chip[data-group]").forEach((chip) => {
+      chip.addEventListener("click", () => {
+        const g = chip.getAttribute("data-group");
+        NM.state.groupFilter = NM.state.groupFilter === g ? null : g;
         NM.applyFilters();
         NM.renderLegend();
       });
